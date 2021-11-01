@@ -36,7 +36,10 @@ body {
     text-transform:uppercase;
     width:100%;
 }
-
+/* added by Erika so the logo doesnt cover everything, change as you please*/
+header img{
+    width:10%;
+}
 /* Portrait layout (default) */
 .app {
     background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
