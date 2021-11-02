@@ -39,6 +39,7 @@ body {
 /* added by Erika so the logo doesnt cover everything, change as you please*/
 header img{
     width:10%;
+    padding: 15px;
 }
 /* Portrait layout (default) */
 .app {
