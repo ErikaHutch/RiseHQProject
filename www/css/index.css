@@ -245,3 +245,52 @@ a:hover{
 #serv-btn{
     background-color: #176671;
 }
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*CONTACT*/
+#contact-us-header-wrapper{
+    color:white;
+    background-color: #3FD4C2;
+    padding: 15px;
+}
+
+#contact-us-header-wrapper h1{
+    font-weight: bold;
+    text-align: left;
+}
+
+#contact-us-details-wrapper{
+    margin: 15px;
+    float: left;
+}
+
+/*needs to be at the bottom of the page*/
+.git-btn-wrapper{
+    padding: 20px;
+    font-weight: bold;
+    font-size: 300%;
+}
+
+#web-btn{
+    background-color: #FF9B81;
+}
+
+#email-btn{
+    background-color: #FF3E50;
+}
+
+#chat-btn{
+    background-color: #176671;
+}
+
+#social-media-ics-wrapper img{
+        width: 80px;
+        height: 80px;
+        position:relative;
+        display: inline-block;
+        float:left;
+        padding: 15px;
+
+}
