@@ -158,3 +158,41 @@ a:hover{
     background-color: #176671;
 }
 
+/*About*/
+#who-we-are{
+    color:white;
+    background-color: #FF9B81;
+    padding: 15px;
+}
+
+#who-we-are h1{
+    font-weight: bold;
+    text-align: left;
+}
+
+#w-w-a-p{
+    margin:20px;
+    /*This needs not be uppercase*/
+}
+
+#AboutImg{
+    width: 400px;
+    height: 200px;
+    object-fit: contain;
+    padding: 5px;
+}
+
+#what-we-do{
+    color:white;
+    background-color: #3FD4C2;
+    padding: 15px;
+}
+
+#what-we-do h1{
+    font-weight: bold;
+    text-align: right;
+}
+
+#w-w-d-p{
+    margin:20px;
+}
