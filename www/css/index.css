@@ -43,7 +43,7 @@ header img{
 /* Portrait layout (default) */
 .app {
     background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
-    /*position:absolute;        S     /* position in the center of the screen */
+    position:absolute;             /* position in the center of the screen */
     left:50%;
     top:50%;
     height:50px;                   /* text area height */
@@ -111,3 +111,50 @@ h1 {
         background-image:linear-gradient(to bottom, #585858 0%, #1B1B1B 51%);
     }
 }
+
+
+/*Hub Page*/
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/*Only works when clicked not on hover, needs looking into*/
+a:hover{
+    text-decoration: underline;
+}
+
+.Hub{
+    padding: 40px;
+    font-weight: bold;
+    font-size: 300%;
+}
+
+.hub1{
+    background-color: #FF9B81;
+}
+
+.hub2{
+    background-color: #FF3E50;
+}
+
+.hub3{
+    background-color: #FF6A46;
+}
+
+.hub4{
+    background-color: #FFBF00;
+}
+
+.hub5{
+    background-color: #3FD4C2;
+}
+
+.hub6{
+    background-color: #176671;
+}
+
