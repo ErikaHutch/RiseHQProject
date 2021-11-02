@@ -112,8 +112,8 @@ h1 {
     }
 }
 
-
-/*Hub Page*/
+/*----------------------------------------------------------------------------------------------------------------------------*/
+/*HUB*/
 li{
     list-style-type: none;
 }
@@ -158,7 +158,10 @@ a:hover{
     background-color: #176671;
 }
 
-/*About*/
+
+
+/*--------------------------------------------------------------------------------------------------------------*/
+/*ABOUT*/
 #who-we-are{
     color:white;
     background-color: #FF9B81;
@@ -195,4 +198,50 @@ a:hover{
 
 #w-w-d-p{
     margin:20px;
+}
+
+
+
+/*------------------------------------------------------------------------------------------------------*/
+/*PROFILE*/
+#profilePic{
+    border-radius: 50%;;
+    width: 150px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profileInfo{
+    margin: auto;
+    width: 50%;
+}
+
+#user-name-wrapper h1{
+    padding-top: 5px;
+}
+
+.p-btn-wrapper{
+    padding: 25px;
+    margin: 30px;
+    font-weight: bold;
+    font-size: 150%;
+    text-align: center;
+}
+
+#save-btn{
+    background-color: #FF9B81;
+}
+
+#pref-btn{
+    background-color: #FF3E50;
+}
+
+#details-btn{
+    background-color: #FFBF00;
+}
+
+#serv-btn{
+    background-color: #176671;
 }
