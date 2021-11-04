@@ -101,8 +101,6 @@ org/apache/cordova/Whitelist.java
  org.apache.cordova.Whitelist$URLPattern
 org/apache/cordova/PluginEntry.java
  org.apache.cordova.PluginEntry
-org/apache/cordova/ICordovaClientCertRequest.java
- org.apache.cordova.ICordovaClientCertRequest
 org/apache/cordova/NativeToJsMessageQueue.java
  org.apache.cordova.NativeToJsMessageQueue
  org.apache.cordova.NativeToJsMessageQueue$BridgeMode
@@ -116,6 +114,8 @@ org/apache/cordova/NativeToJsMessageQueue.java
  org.apache.cordova.NativeToJsMessageQueue$OnlineEventsBridgeMode$1
  org.apache.cordova.NativeToJsMessageQueue$OnlineEventsBridgeMode$2
  org.apache.cordova.NativeToJsMessageQueue$OnlineEventsBridgeMode$OnlineEventsBridgeModeDelegate
+org/apache/cordova/ICordovaClientCertRequest.java
+ org.apache.cordova.ICordovaClientCertRequest
 org/apache/cordova/CordovaHttpAuthHandler.java
  org.apache.cordova.CordovaHttpAuthHandler
 org/apache/cordova/CordovaWebView.java
