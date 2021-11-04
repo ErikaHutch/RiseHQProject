@@ -266,8 +266,9 @@ a:hover{
 }
 
 #contact-us-details-wrapper{
-    margin: 15px;
-    float: left;
+    padding: 25px;
+    text-align: center;
+    font-size: large;
 }
 
 /*needs to be at the bottom of the page*/
