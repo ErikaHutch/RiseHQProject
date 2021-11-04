@@ -18,9 +18,9 @@
  */
 * {
     -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
-    font-family: 'gorditablack', 'Gorditas', sans-serif; /* adding custom fonts */
-    font-weight: normal;
-    font-style: normal;
+    /*font-family: 'gorditablack', 'Gorditas', sans-serif; /* adding custom fonts */
+    /*font-weight: normal;
+    font-style: normal;*/
 }
 
 body {
@@ -304,6 +304,8 @@ a:hover{
 /* QUIZE PAGES */
 .bar{
     display: block;
+    width:100%;
     padding: 10px 30px;
     background-color: #FF6A46;
+    font-weight: bold;
 }
