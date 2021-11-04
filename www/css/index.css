@@ -373,3 +373,16 @@ a:hover{
     padding: 1%;
     display: block;
 }
+
+/*--------------------------------------------------------------------------------------------------------*/
+/* ARTICLES*/
+
+#feed-topic-filters-wrapper {
+    width: 100%;
+}
+
+#feed-topic-filters-wrapper form {
+    width:33%;
+    float: left;
+    padding: 3%;
+}
