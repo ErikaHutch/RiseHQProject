@@ -331,6 +331,11 @@ a:hover{
     padding: 3% 5%;
 }
 
+#questionHead{
+    color: white;
+    font-size: 15px;
+}
+
 .headRow{
     display:block;
     height:10%;
@@ -361,4 +366,10 @@ a:hover{
     max-width: 40%;
     display: block;
     margin: 35% auto;
+}
+
+#inputName{
+    margin: 25% auto;
+    padding: 1%;
+    display: block;
 }

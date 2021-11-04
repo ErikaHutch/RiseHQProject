@@ -13,39 +13,39 @@
     <meta name="color-scheme" content="light dark">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="fontFiles/font.css" type="text/css" charset="utf-8">
-
-    <title>Quiz Intro</title>
+    <title>Quiz</title>
 </head>
 
 <body class="quiz">
-
     <div class="headRow">
         <header>
             <!--logo-->
             <img src="img/RiseBlackVariant.png">
             <!--menu bar button-->
-            <!--<button class="x"><a href="menuBar.html">x</a></button>
-            -->
+            <!--<button><a href="menuBar.html">Button</a></button>-->
             <p id="x"><a href="menuBar.html">x</a></p>
+
         </header>
     </div>
 
-
     <div class="bar" style="background-color: #FF9B81;">
-        <h3>Welcome to RiseHq!</h3>
+        <h2 id="questionHead">Welcome [name] to RISE HQ</h2>
     </div>
-
 
     <div class="row">
-        <p id="question">We'll be asking some questions because we want to get to know more details about your journey.
+        <p id="question">We know you’re unique, and at RISE HQ we’re all about making sure what you see relates to you.
+            So we’d like to take you through some choices so that what you see is what you need.
         </p>
-        <div class="bar decoration" style="background-color: #FFBF00"></div>
+        <!--Question-->
+        <div>
+            <!--Containre for question element-->
+            <p id="okButton" style="background-color: #B7B6B4; margin-top:25%;">Dropdown List of Choices</p>
+            <!--quiz input elemenen-->
+        </div>
     </div>
-
 
     <div class="row">
         <p id="okButton"><a href="quizQuestion1.html">Continue</a></p>
-
         <div>
             <!--Container for progress circles-->
             <!--will change dynamically depending on the number of questions, but for now this will work as place holders for visual-->
@@ -55,11 +55,7 @@
             <span></span>
             <span></span>
         </div>
-
     </div>
-
-    <!--<button><a href="quizQuestion.html">Continue</a></button>-->
-    
 </body>
 
 </html>
