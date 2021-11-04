@@ -307,6 +307,7 @@ a:hover{
         float:left;
         padding: 15px;
 }
+
 /*--------------------------------------------------------------------------------------------------------*/
 /* QUIZE PAGES */
 .bar{
@@ -315,4 +316,16 @@ a:hover{
     padding: 5px;
     font-weight: bold;
     font-size: 20px;
+    text-align: center;
+}
+
+.row{
+    margin: 0;
+    height: 30%;
+}
+
+.decoration{
+    width: 40%; 
+    height: 30px;
+
 }
