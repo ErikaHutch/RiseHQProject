@@ -324,10 +324,15 @@ a:hover{
     height: 30%;
 }
 
+.headRow{
+    display:block;
+    height:10%;
+    width:100%;
+}
+
 .decoration{
     width: 40%; 
     height: 30px;
-
 }
 
 .quiz{
@@ -335,5 +340,7 @@ a:hover{
 }
 
 .x{
-    
+    margin-top: 0;
+    margin-right: 0;
+    display: inline;
 }
