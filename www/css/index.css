@@ -122,6 +122,7 @@ h1 {
     }
 }
 
+
 /*----------------------------------------------------------------------------------------------------------------------------*/
 /*HUB*/
 li{
@@ -383,6 +384,23 @@ a:hover{
 
 #feed-topic-filters-wrapper form {
     width:33%;
-    float: left;
-    
+    float: left;  
+}
+
+#articles-content{
+    padding: 5%;
+}
+
+.article-wrapper{
+    border: solid #000000;
+}
+
+.colGreen{
+    color: #176671;
+}
+.colRed{
+    color: #FF3E50;
+}
+.colYellow{
+    color: #FFBF00;
 }
