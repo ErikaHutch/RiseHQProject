@@ -133,9 +133,8 @@ a:hover{
 }
 
 .Hub{
-    margin:0;
-    position: relative;
-    padding: 40px;
+    
+    padding: 30px;
     font-weight: bold;
     font-size: 300%;
     max-height: 16%;
@@ -223,6 +222,7 @@ a:hover{
 .profileInfo{
     margin: auto;
     width: 50%;
+    text-align: center;
 }
 
 #user-name-wrapper h1{
