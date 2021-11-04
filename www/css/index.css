@@ -378,6 +378,7 @@ a:hover{
 /*--------------------------------------------------------------------------------------------------------*/
 /* ARTICLES*/
 
+/* title and filters */
 #feed-topic-filters-wrapper {
     width: 100%;
 }
@@ -389,10 +390,31 @@ a:hover{
 
 #articles-content{
     padding: 5%;
+    margin-bottom: 5%;
+    
 }
 
+/* articles sections */
+
 .article-wrapper{
-    border: solid #000000;
+    clear: both;
+    border: solid medium #000000;
+    padding: 5%;
+    margin-top: 5%;
+}
+
+.article-wrapper p{
+    text-transform:lowercase;
+    font-size: small;
+}
+
+.article-wrapper button{
+    float: right;
+    padding: 2%;
+    background:url(../img/icon_heart.png);
+    width: 24px;
+    height: 24px;
+    border: none;
 }
 
 .colGreen{
@@ -403,4 +425,20 @@ a:hover{
 }
 .colYellow{
     color: #FFBF00;
+}
+.colTurqu{
+    color: #3FD4C2;
+}
+
+.oddNum {
+    margin-left: -10%;
+    margin-right: 7%;
+    padding-left: 10%;
+}
+
+.evenNum {
+    margin-left: 10%;
+    margin-right: -15%;
+    padding-right: 7%;
+    padding-left: 7%;
 }
