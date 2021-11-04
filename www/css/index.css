@@ -344,3 +344,16 @@ a:hover{
     margin-right: 0;
     display: inline;
 }
+
+/*--------------------------------------------------------------------------------------------------------*/
+/* ARTICLES */
+
+#feed-topic-filters-wrapper{
+    width:100%;
+}
+
+#feed-topic-filters-wrapper form {
+    box-sizing: border-box;
+    float:left;
+    width:33%;
+}
