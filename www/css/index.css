@@ -45,6 +45,11 @@ header img{
     width:10%;
     padding: 15px;
 }
+
+h3{
+    color:#FFFFFF
+}
+
 /* Portrait layout (default) */
 .app {
     background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
