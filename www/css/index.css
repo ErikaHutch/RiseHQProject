@@ -130,7 +130,7 @@ li{
 
 a{
     text-decoration: none;
-    color: white;
+    /*color: white;*/
 }
 
 /*Only works when clicked not on hover, needs looking into*/
@@ -310,6 +310,7 @@ a:hover{
 
 /*--------------------------------------------------------------------------------------------------------*/
 /* QUIZE PAGES */
+
 .bar{
     display: block;
     width:100%;
@@ -321,7 +322,13 @@ a:hover{
 
 .row{
     margin: 0;
-    height: 30%;
+    height: 37%;
+    width: 100%;
+    float: left;
+}
+
+#question{
+    padding: 3% 5%;
 }
 
 .headRow{
@@ -333,14 +340,25 @@ a:hover{
 .decoration{
     width: 40%; 
     height: 30px;
+    margin-top: 45%;
 }
 
 .quiz{
     background-color: #FEFDFA;
 }
 
-.x{
-    margin-top: 0;
-    margin-right: 0;
-    display: inline;
+#x{
+    margin-top: 2%;
+    margin-right: 2%;
+    padding: 5px 10px;
+    float: right;
+}
+
+#okButton{
+    background-color: #3FD4C2;
+    padding: 2% 4%;
+    text-align: center;
+    max-width: 40%;
+    display: block;
+    margin: 35% auto;
 }
