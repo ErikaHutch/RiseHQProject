@@ -15,6 +15,28 @@
     <link rel="stylesheet" href="../fontFiles/font.css" type="text/css" charset="utf-8">
 
     <title>Quiz Intro</title>
+
+    <style>
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+
+        }
+
+        .dots{
+            margin: 0;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            padding: 0 0 10%;
+        }
+    </style>
 </head>
 
 <body class="quiz">
@@ -43,23 +65,30 @@
     </div>
 
 
-    <div class="row">
-        <p id="okButton"><a href="quizQuestion1.html">Continue</a></p>
+    <footer>
 
-        <div>
-            <!--Container for progress circles-->
-            <!--will change dynamically depending on the number of questions, but for now this will work as place holders for visual-->
-            <!--progress circles-->
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+
+        <div class="row">
+            <p id="okButton"><a href="quizQuestion1.html">Continue</a></p>
+
+            <div class="dots">
+                <!--Container for progress circles-->
+                <!--will change dynamically depending on the number of questions, but for now this will work as place holders for visual-->
+                <!--progress circles-->
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
         </div>
-
-    </div>
+    </footer>
 
     <!--<button><a href="quizQuestion.html">Continue</a></button>-->
-    
+
 </body>
 
 </html>

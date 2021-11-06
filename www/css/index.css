@@ -368,24 +368,20 @@ a:hover{
     font-size: 15px;
 }
 
-
-
 .headRow{
     display:block;
     height:10%;
     width:100%;
 }
 
-.decoration{ 
-    height: 30px;
-    margin-top: 45%;
-}
-
-
 #inputName{
     margin: 25% auto;
     padding: 1%;
     display: block;
+}
+
+footer{
+    bottom:0;
 }
 /*--------------------------------------------------------------------------------------------------------*/
 /* ARTICLES*/
