@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../fontFiles/font.css" type="text/css" charset="utf-8">
+    <style>
+        .journeyChoice {
+            margin: 0;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        .rowQ5 {
+            height: 50%;
+            margin-top: 70%;
+        }
+
+        .mainRowQ5{
+            min-height: 500px;
+        }
+    </style>
+    <title>Quiz</title>
+</head>
+
+<body class="quiz">
+    <div class="headRow">
+        <header>
+            <!--logo-->
+            <img src="../img/RiseBlackVariant.png">
+            <!--menu bar button-->
+            <!--<button><a href="menuBar.html">Button</a></button>-->
+            <p id="x"><a href="../menuBar.html">x</a></p>
+
+        </header>
+    </div>
+
+    <div class="mainRowQ5">
+
+
+        <div class="bar" style="background-color: #FF9B81;">
+            <h2 id="questionHead">Choose your journey</h2>
+        </div>
+
+        <div>
+            <p id="question">Lastly What would you like to know more about in your life?
+            </p>
+            <!--Question-->
+            <div class="journeyChoice">
+                <!--Containre for question element-->
+                <form action="#">
+                    <input type="text" list="date" placeholder="Your journey">
+                    <datalist id="date">
+                        <option value="Pensions">
+                        <option value="Sex">
+                        <option value="Body Health">
+                        <option value="Fitness">
+                        <option value="Food">
+                        <option value="Mental Health">
+                        <option value="Finances">
+                        <option value="Parenthood">
+                        <option value="Relationships">
+                    </datalist>
+                </form>
+
+            </div>
+        </div>
+
+
+        <div class="rowQ5">
+            <p id="okButton"><a href="quizQuestion6.html">Continue</a></p>
+            <div>
+                <!--Container for progress circles-->
+                <!--will change dynamically depending on the number of questions, but for now this will work as place holders for visual-->
+                <!--progress circles-->
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
