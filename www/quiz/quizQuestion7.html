@@ -14,13 +14,6 @@
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/quiz.css">
     <link rel="stylesheet" href="../fontFiles/font.css" type="text/css" charset="utf-8">
-    <style>
-        .rowText {
-            min-height: 300px;
-            max-height: 80%;
-            display: block;
-        }
-    </style>
     <title>Quiz</title>
 </head>
 
@@ -37,29 +30,28 @@
     </div>
 
     <div class="bar" style="background-color: #FF9B81;">
-        <h2 id="questionHead">Disclaimer and consent</h2>
+        <h2 id="questionHead">Thanks [name]! That's you set</h2>
     </div>
 
-    <div class="rowText">
-        <p id="question">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel cursus ipsum, eget facilisis felis. Sed
-            tincidunt quis felis imperdiet gravida. Etiam ultrices tellus leo. Suspendisse finibus aliquet aliquet.
-            <br><br>
-            Proin finibus dolor ex, ac placerat diam mollis nec. Sed tincidunt maximus fermentum. Curabitur facilisis
-            est at
-            lobortis porttitor. Mauris elementum fringilla nunc, sit amet scelerisque arcu finibus eu. Integer suscipit
-            nisl sem, ultricies sollicitudin elit venenatis et.
-            <br><br><br>
-            Read all our <a href="#"><span style="color: blue"> Terms and conditions</span></a> here
-            <br><br><br>
-            <input type="checkbox" id="consent" name="consent">
-            <label for="consent">I have read and agree to all Terms and conditions</label>
+    <div class="row">
+        <p id="question">We know life’s a journey and things change. If they do you can update your preferences anytime in your settings.
         </p>
+
+        <div class="links">
+            <p> Get the tour</p>
+            <p class="posts" style="background-color: #3fd4c2;"><a href="#"> Tour </a></p>
+
+            <p> or </p>
+
+            <p> go straight to your journey</p>
+            <p class="posts" style="background-color: #3fd4c2;"><a href="../articles.html"> Your Journey </a></p>
+        </div>
+
     </div>
 
     <footer>
+
         <div class="rowFooter">
-            <p id="okButton"><a href="quizQuestion4.html">Continue</a></p>
             <div class="dots">
                 <!--Container for progress circles-->
                 <!--will change dynamically depending on the number of questions, but for now this will work as place holders for visual-->
@@ -74,7 +66,6 @@
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>

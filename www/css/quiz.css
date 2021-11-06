@@ -40,3 +40,30 @@
     display: block;
     margin: 0 auto 10%;
 }
+
+.journeyChoice {
+    margin: 0;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.posts{
+    padding: 10px;
+    text-align: center;
+    display: block;
+    background-color: #ff9b81;
+    max-width: 40%;
+    margin: 5% auto 0;
+}
+
+.postsDiv{
+    width:100%;
+    margin: 10% 0;
+}
+
+.links{
+    text-align: center;
+    margin:5% auto;
+}
