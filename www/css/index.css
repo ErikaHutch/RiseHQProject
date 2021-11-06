@@ -128,6 +128,16 @@ h2{
     }
 }
 
+/* Nav bar */
+header button{
+    float: right;
+    margin: 3% 5%;
+    background:url(../img/icon_menu.png);
+    border: none;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+}
 
 /*----------------------------------------------------------------------------------------------------------------------------*/
 /*HUB*/
@@ -364,6 +374,7 @@ a:hover{
     background-repeat: no-repeat;
     background-size: 20%;
     background-position: 2% -0.5%;
+    border-top: solid thick #000000;
 }
 
 /* title*/
@@ -452,3 +463,5 @@ outline: none;
     margin-right: 0%;
     border-right: none;
 }
+
+
