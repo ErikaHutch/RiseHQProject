@@ -359,10 +359,21 @@ a:hover{
 
 /*--------------------------------------------------------------------------------------------------------*/
 /* ARTICLES*/
+#articles-content{
+    background-image:url(../img/ellipse.png);
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: 2% -0.5%;
+}
 
 /* title*/
 #feed-header-wrapper{
     margin: 5%;
+    padding-top: 7%;
+}
+
+#feed-header-wrapper h1{
+    text-align:left;
 }
 
 /* filters */
@@ -370,15 +381,22 @@ a:hover{
     width: 100%;
 }
 
-#feed-topic-filters-wrapper form {
-    width:20%;
-    float: left;  
+#feed-topic-filters-wrapper input, #feed-topic-filters-wrapper button, select {
+    width:25%;
+    float: left;
+    padding: 2%;
+    margin-right: 4%;  
+    border: 1px solid #176671;
+    color: #176671;
+}
+form{
+    margin-left: 10%;
 }
 
-#articles-content{
-    padding: 5%;
-    margin-bottom: 5%;
+#feed-topic-filters-wrapper input:focus {
+outline: none;
 }
+
 #empty{
     clear: both;
 }
@@ -406,6 +424,10 @@ a:hover{
     border: none;
 }
 
+.article-wrapper button:active{
+    background:url(../img/icon_heart_full.png);
+}
+
 .colGreen{
     color: #176671;
 }
@@ -420,13 +442,13 @@ a:hover{
 }
 
 .oddNum {
-    margin-left: -10%;
+    margin-left: 0%;
     margin-right: 10%;
-    padding-left: 10%;
+    border-left: none;
 }
 
 .evenNum {
     margin-left: 10%;
-    margin-right: -10%;
-    padding-left: 7%;
+    margin-right: 0%;
+    border-right: none;
 }
