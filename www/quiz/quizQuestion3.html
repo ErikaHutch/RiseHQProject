@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../fontFiles/font.css" type="text/css" charset="utf-8">
+    <style>
+        .rowText {
+            min-height: 300px;
+            max-height: 80%;
+        }
+
+        .rowConsent {
+            height: 20%;
+            margin: 0;
+        }
+
+        #okButtonConsent {
+            background-color: #3FD4C2;
+            padding: 2% 4%;
+            text-align: center;
+            max-width: 40%;
+            display: block;
+            margin: 10% auto 15%;
+        }
+    </style>
+    <title>Quiz</title>
+</head>
+
+<body class="quiz">
+    <div class="headRow">
+        <header>
+            <!--logo-->
+            <img src="../img/RiseBlackVariant.png">
+            <!--menu bar button-->
+            <!--<button><a href="menuBar.html">Button</a></button>-->
+            <p id="x"><a href="../menuBar.html">x</a></p>
+
+        </header>
+    </div>
+
+    <div class="bar" style="background-color: #FF9B81;">
+        <h2 id="questionHead">Disclaimer and consent</h2>
+    </div>
+
+    <div class="rowText">
+        <p id="question">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel cursus ipsum, eget facilisis felis. Sed
+            tincidunt quis felis imperdiet gravida. Etiam ultrices tellus leo. Suspendisse finibus aliquet aliquet.
+            <br><br>
+            Vestibulum efficitur tempor interdum. Curabitur dapibus eget est non lobortis. Fusce fringilla, velit a
+            bibendum porta, felis turpis elementum mauris, et interdum elit nulla ac eros. Sed sed tempus velit.
+            <br><br>
+            Proin finibus dolor ex, ac placerat diam mollis nec. Sed tincidunt maximus fermentum. Curabitur facilisis
+            est at
+            lobortis porttitor. Mauris elementum fringilla nunc, sit amet scelerisque arcu finibus eu. Integer suscipit
+            nisl sem, ultricies sollicitudin elit venenatis et.
+            <br><br><br>
+            Read all our <a href="#"><span style="color: blue"> Terms and conditions</span></a> here
+            <br><br><br>
+            <input type="checkbox" id="consent" name="consent">
+            <label for="consent">I have read and agree to all Terms and conditions</label>
+        </p>
+    </div>
+
+    <div class="rowConsent">
+        <p id="okButtonConsent"><a href="quizQuestion4.html">Continue</a></p>
+        <div>
+            <!--Container for progress circles-->
+            <!--will change dynamically depending on the number of questions, but for now this will work as place holders for visual-->
+            <!--progress circles-->
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+</body>
+
+</html>
