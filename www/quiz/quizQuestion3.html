@@ -12,26 +12,15 @@
     <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
     <meta name="color-scheme" content="light dark">
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/quiz.css">
     <link rel="stylesheet" href="../fontFiles/font.css" type="text/css" charset="utf-8">
     <style>
         .rowText {
             min-height: 300px;
             max-height: 80%;
-        }
-
-        .rowConsent {
-            height: 20%;
-            margin: 0;
-        }
-
-        #okButtonConsent {
-            background-color: #3FD4C2;
-            padding: 2% 4%;
-            text-align: center;
-            max-width: 40%;
             display: block;
-            margin: 10% auto 15%;
         }
+
     </style>
     <title>Quiz</title>
 </head>
@@ -57,9 +46,6 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel cursus ipsum, eget facilisis felis. Sed
             tincidunt quis felis imperdiet gravida. Etiam ultrices tellus leo. Suspendisse finibus aliquet aliquet.
             <br><br>
-            Vestibulum efficitur tempor interdum. Curabitur dapibus eget est non lobortis. Fusce fringilla, velit a
-            bibendum porta, felis turpis elementum mauris, et interdum elit nulla ac eros. Sed sed tempus velit.
-            <br><br>
             Proin finibus dolor ex, ac placerat diam mollis nec. Sed tincidunt maximus fermentum. Curabitur facilisis
             est at
             lobortis porttitor. Mauris elementum fringilla nunc, sit amet scelerisque arcu finibus eu. Integer suscipit
@@ -73,9 +59,9 @@
     </div>
 
     <footer>
-        <div class="rowConsent">
-            <p id="okButtonConsent"><a href="quizQuestion4.html">Continue</a></p>
-            <div>
+        <div class="rowFooter">
+            <p id="okButton"><a href="quizQuestion4.html">Continue</a></p>
+            <div class="dots">
                 <!--Container for progress circles-->
                 <!--will change dynamically depending on the number of questions, but for now this will work as place holders for visual-->
                 <!--progress circles-->
