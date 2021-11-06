@@ -20,7 +20,10 @@
     </header>
 
     <div id="articles-content">
-        <div id="feed-header-wrapper"><h1>Your journey.</h1></div>
+        <div id="feed-header-wrapper">
+            
+            <h1>Your journey.</h1>
+        </div>
         <div id="feed-topic-filters-wrapper">
             
             <form action="#">
@@ -33,15 +36,18 @@
             </form>
 
             <form action="#">
-                <input type="text" list="topics" placeholder="Topics">
-                <datalist id="topics">
-                    <option value="Body">
-                    <option value="Sex">
-                    <option value="Life">
-                    <option value="Self">
-                    <option value="Mind">
-                    <option value="News">
-                </datalist>
+                <!--<input type="text" list="topics" placeholder="Topics">
+                <datalist id="topics">-->
+                    <select>
+                    <option>Topics</option>
+                    <option value="Body">Body</option>
+                    <option value="Sex">Sex</option>
+                    <option value="Life">Life</option>
+                    <option value="Self">Self</option>
+                    <option value="Mind">Mind</option>
+                    <option value="News">News</option>
+                    </select>
+                <!--</datalist>-->
             </form>
 
             <form action="#"><button>Saved</button></form>
