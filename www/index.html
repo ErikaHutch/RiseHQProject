@@ -18,9 +18,10 @@
     under the License.
 -->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <!--
+
+<head>
+    <meta charset="utf-8">
+    <!--
         Customize this policy to fit your own app's needs. For more guidance, see:
             https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
         Some notes:
@@ -29,28 +30,47 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
-        <meta name="color-scheme" content="light dark">
-        <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="fontFiles/font.css"  type="text/css" charset="utf-8">
-        <title>Landing Page</title>
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="fontFiles/font.css" type="text/css" charset="utf-8">
+    <title>Landing Page</title>
 
-        <style>
-            body{
-                background: url(img/landingPagelogo.png);
-            }
-        </style>
-    </head>
-    <body>
-        <div class="">
-            <div>
-                <button><a href="quiz/quizIntro.html">Sign Up</a></button> <!--sign in-->
-                <button><a href="hub.html">Browse</a></button> <!--browse-->
-            </div>
+    <style>
+        body {
+            background-image: url("img/landingPagelogo.png");
+            background-size: cover;
+        }
+
+        .container {
+            height: 100%;
+            position: relative;
+        }
+
+        .landingButtons {
+            margin: 0;
+            position: absolute;
+            top: 85%;
+            left: 50%;
+            transform: translate(-50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="landingButtons">
+            <button><a href="quiz/quizIntro.html">Sign Up</a></button>
+            <!--sign in-->
+            <button><a href="hub.html">Browse</a></button>
+            <!--browse-->
         </div>
-    
-    </body>
+    </div>
+
+</body>
+
 </html>
