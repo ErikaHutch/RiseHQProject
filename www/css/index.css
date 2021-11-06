@@ -360,19 +360,27 @@ a:hover{
 /*--------------------------------------------------------------------------------------------------------*/
 /* ARTICLES*/
 
-/* title and filters */
+/* title*/
+#feed-header-wrapper{
+    margin: 5%;
+}
+
+/* filters */
 #feed-topic-filters-wrapper {
     width: 100%;
 }
 
 #feed-topic-filters-wrapper form {
-    width:33%;
+    width:20%;
     float: left;  
 }
 
 #articles-content{
     padding: 5%;
     margin-bottom: 5%;
+}
+#empty{
+    clear: both;
 }
 
 /* articles sections */
@@ -413,13 +421,12 @@ a:hover{
 
 .oddNum {
     margin-left: -10%;
-    margin-right: 7%;
+    margin-right: 10%;
     padding-left: 10%;
 }
 
 .evenNum {
     margin-left: 10%;
-    margin-right: -15%;
-    padding-right: 7%;
+    margin-right: -10%;
     padding-left: 7%;
 }
