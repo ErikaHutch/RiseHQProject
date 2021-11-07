@@ -13,13 +13,15 @@
     <meta name="color-scheme" content="light dark">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/quiz.css">
-    <link rel="stylesheet" href="../fontFiles/font.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="../fontFiles/GorditaBlack/gorditaBlack.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="../fontFiles/GorditaMedium/gorditaMedium.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="../fontFiles/GorditaRegular/gorditaRegular.css" type="text/css" charset="utf-8">
+
     <style>
         .rowQ5 {
             height: 50%;
             margin-top: 70%;
         }
-
     </style>
     <title>Quiz</title>
 </head>
@@ -28,7 +30,7 @@
     <div class="headRow">
         <header>
             <!--logo-->
-            <img src="../img/RiseBlackVariant.png">
+            <img class="logo" src="../img/RiseBlackVariant.png">
             <!--menu bar button-->
             <!--<button><a href="menuBar.html">Button</a></button>-->
             <p id="x"><a href="../menuBar.html">x</a></p>
@@ -49,45 +51,48 @@
             <!--Question-->
             <div class="journeyChoice">
                 <!--Containre for question element-->
-                <form action="#">
-                    <input type="text" list="date" placeholder="Your journey">
-                    <datalist id="date">
-                        <option value="Pensions">
-                        <option value="Sex">
-                        <option value="Body Health">
-                        <option value="Fitness">
-                        <option value="Food">
-                        <option value="Mental Health">
-                        <option value="Finances">
-                        <option value="Parenthood">
-                        <option value="Relationships">
-                    </datalist>
+                <form action="#" id="journeyChoice">
+                    <!--<input type="text" list="date" placeholder="Your journey">
+                    <datalist id="date">-->
+                    <select>
+                        <option>Your Journey</option>
+                        <option value="Pensions">Pensions</option>
+                        <option value="Sex">Sex</option>
+                        <option value="Body Health">Body Health</option>
+                        <option value="Fitness">Fitness</option>
+                        <option value="Food">Food</option>
+                        <option value="Mental Health">Mental Health</option>
+                        <option value="Finances">Finances</option>
+                        <option value="Parenthood">Parenthood</option>
+                        <option value="Relationships">Relationships</option>
+                    </select>
+                    <!--</datalist>-->
                 </form>
 
             </div>
         </div>
     </div>
 
-        <footer>
-            <div class="rowFooter">
-                <p id="okButton"><a href="quizQuestion6.html">Continue</a></p>
-                <div class="dots">
-                    <!--Container for progress circles-->
-                    <!--will change dynamically depending on the number of questions, but for now this will work as place holders for visual-->
-                    <!--progress circles-->
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                </div>
+    <footer>
+        <div class="rowFooter">
+            <p id="okButton"><a href="quizQuestion6.html">Continue</a></p>
+            <div class="dots">
+                <!--Container for progress circles-->
+                <!--will change dynamically depending on the number of questions, but for now this will work as place holders for visual-->
+                <!--progress circles-->
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
             </div>
-        </footer>
+        </div>
+    </footer>
 
 
-    
+
 </body>
 
 </html>

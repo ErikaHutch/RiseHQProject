@@ -21,7 +21,7 @@
 .headRow{
     display:block;
     height:10%;
-    width:100%;
+    
 }
 
 .rowFooter {
@@ -30,6 +30,10 @@
     height: 20%;
     position: fixed;
     width: 100%;
+}
+
+#consent{
+    margin: 10px;
 }
 
 #okButton{
@@ -42,11 +46,20 @@
 }
 
 .journeyChoice {
-    margin: 0;
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%);
+    margin: 30% auto;
+    text-align: center;
+}
+
+#journeyChoice{
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+    width:40%;
+}
+
+#journeyChoice select{
+    width:100%;
+    color: #333333;
 }
 
 .posts{

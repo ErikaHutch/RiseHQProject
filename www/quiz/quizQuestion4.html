@@ -21,7 +21,7 @@
     <div class="headRow">
         <header>
             <!--logo-->
-            <img src="../img/RiseBlackVariant.png">
+            <img class="logo" src="../img/RiseBlackVariant.png">
             <!--menu bar button-->
             <!--<button><a href="menuBar.html">Button</a></button>-->
             <p id="x"><a href="../menuBar.html">x</a></p>
@@ -40,19 +40,22 @@
         <!--Question-->
         <div class="journeyChoice">
             <!--Containre for question element-->
-            <form action="#">
-                <input type="text" list="date" placeholder="Your journey">
-                <datalist id="date">
-                    <option value="Puberty">
-                    <option value="Pregnancy">
-                    <option value="Periods">
-                    <option value="Post Fertility">
-                    <option value="Hormones">
-                    <option value="Fertility">
-                    <option value="Infertility">
-                    <option value="Pregnancy Loss">
-                    <option value="Contraception">
-                </datalist>
+            <form id="journeyChoice" action="#">
+                <!--<input type="text" list="date" placeholder="Your journey">
+                <datalist id="date">-->
+                    <select>
+                        <option>Your Journey</option>
+                    <option value="Puberty">Puberty</option>
+                    <option value="Pregnancy">Pregnancy</option>
+                    <option value="Periods">Periods</option>
+                    <option value="Post Fertility">Post Fertility</option>
+                    <option value="Hormones">Hormones</option>
+                    <option value="Fertility">Fertility</option>
+                    <option value="Infertility">Infertility</option>
+                    <option value="Pregnancy Loss">Pregnancy Loss</option>
+                    <option value="Contraception">Contraception</option>
+                    </select>
+                <!--</datalist>-->
             </form>
 
         </div>
