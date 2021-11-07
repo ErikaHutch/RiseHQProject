@@ -513,7 +513,7 @@ article b{
     background-image:url(../img/ellipse3.png);
     background-repeat: no-repeat;
     background-size: 13%;
-    background-position: 43% 11%;
+    background-position: 43% 6%;
     text-align: center;
 }
 #titleSection{
@@ -534,4 +534,37 @@ article b{
 
 #services-content input:focus {
     outline: none;
-    }
+}
+
+.servicesContainer{
+    margin:5% 10%;
+    padding:3%;
+    border: 1px solid #176671;
+    text-align: center;
+}
+.servicesContainer img{
+    width:80%;
+}
+
+#servicesMap{
+    width:100%;
+}
+
+#servicesContainerMap{
+    border: none;
+    padding:0px;
+}
+
+.servicesContainer button{
+    float: right;
+    padding: 2%;
+    background:url(../img/icon_heart.png);
+    width: 24px;
+    height: 24px;
+    border: none;;
+}
+
+.servicesContainer button:active{
+    background:url(../img/icon_heart_full.png);
+}
+
