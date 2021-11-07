@@ -1,75 +1,91 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
 
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
-        <meta name="color-scheme" content="light dark">
-        <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="fontFiles/font.css"  type="text/css" charset="utf-8">
-        <title>Services</title>
-    </head>
-    <body>
-        <header>
-            <img src="img/RiseBlackVariant.png"> <!--logo-->
-            <button><a href="menuBar.html">Button</a></button><!--menu bar button-->
-        </header>
-        <div id="services-content">
-            <div id="titleSection">
-                <h1>Services</h1> 
-            </div>
-            <form action="#">
-                <input type="text" list="date" placeholder="Find your services">
-                <datalist id="date">
-                    <option value="Physiotherapist"></option>
-                    <option value="Therapists"></option>
-                    <option value="Counselling"></option>
-                    <option value="Bra Shop"></option>
-                    <option value="Bra Fitting"></option>
-                    <option value="Midwife"></option>
-                    <option value="Domestic Abuse"></option>
-                    <option value="Sexual Assault"></option>
-                    <option value="Refuge"></option>
-                    <option value="Miscarriage"></option>
-                    <option value="Baby Loss"></option>
-                    <option value="Maternity Clothing"></option>
-                    <option value="Baby Clothing"></option>
-                    <option value="Baby Equipment"></option>
-                    <option value="Parent Groups"></option>
-                    <option value="Playgroups"></option>
-                    <option value="Career Services/ Coach/ Support"></option>
-                    <option value="Business Coach"></option>
-                    <option value="Financial Advice"></option>
-                    <option value="Life Coach"></option>
-                    <option value="Childcare"></option>
-                    <option value="Nursery"></option>
-                    <option value="Legal Advice/Solicitors"></option>
-                    <option value="Friend Apps"></option>
-                    <option value="Meet Ups"></option>
-                    <option value="Friend Groups"></option>
-                    <option value="Events"></option>
-                </datalist>
-            </form>
-            <div> <!--services container, make scrollable-->
-                <div class="servicesContainer" id="servicesContainerMap"> <!-- example listed service, will be genertated dynamically laterz-->
-                    <img src="img/map.png" id="servicesMap"><!--service image-->
-                <div class="servicesContainer"> <!-- example listed service, will be genertated dynamically laterz-->
-                    <img src="img/services1.png"><!--service image-->
+<head>
+    <meta charset="utf-8">
+
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="css/index.css">
+    <!-- FONTS -->
+    <link rel="stylesheet" href="fontFiles/GorditaBlack/gorditaBlack.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="fontFiles/GorditaMedium/gorditaMedium.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="fontFiles/GorditaRegular/gorditaRegular.css" type="text/css" charset="utf-8">
+    <title>Services</title>
+</head>
+
+<body>
+    <header>
+        <img src="img/RiseBlackVariant.png">
+        <!--logo-->
+        <button><a href="menuBar.html">Button</a></button>
+        <!--menu bar button-->
+    </header>
+    <div id="services-content">
+        <div id="titleSection">
+            <h1>Services</h1>
+        </div>
+        <form action="#">
+            <input type="text" list="date" placeholder="Find your services">
+            <datalist id="date">
+                <option value="Physiotherapist"></option>
+                <option value="Therapists"></option>
+                <option value="Counselling"></option>
+                <option value="Bra Shop"></option>
+                <option value="Bra Fitting"></option>
+                <option value="Midwife"></option>
+                <option value="Domestic Abuse"></option>
+                <option value="Sexual Assault"></option>
+                <option value="Refuge"></option>
+                <option value="Miscarriage"></option>
+                <option value="Baby Loss"></option>
+                <option value="Maternity Clothing"></option>
+                <option value="Baby Clothing"></option>
+                <option value="Baby Equipment"></option>
+                <option value="Parent Groups"></option>
+                <option value="Playgroups"></option>
+                <option value="Career Services/ Coach/ Support"></option>
+                <option value="Business Coach"></option>
+                <option value="Financial Advice"></option>
+                <option value="Life Coach"></option>
+                <option value="Childcare"></option>
+                <option value="Nursery"></option>
+                <option value="Legal Advice/Solicitors"></option>
+                <option value="Friend Apps"></option>
+                <option value="Meet Ups"></option>
+                <option value="Friend Groups"></option>
+                <option value="Events"></option>
+            </datalist>
+        </form>
+        <div>
+            <!--services container, make scrollable-->
+            <div class="servicesContainer" id="servicesContainerMap">
+                <!-- example listed service, will be genertated dynamically laterz-->
+                <img src="img/map.png" id="servicesMap">
+                <!--service image-->
+                <div class="servicesContainer">
+                    <!-- example listed service, will be genertated dynamically laterz-->
+                    <img src="img/services1.png">
+                    <!--service image-->
                     <button></button> <!-- heart button <3, should it be an image?-->
                     <p>Service title</p>
                     <p>Service description</p>
                 </div>
-                <div class="servicesContainer"> <!-- example listed service-->
-                    <img src="img/services2.png"><!--service image-->
+                <div class="servicesContainer">
+                    <!-- example listed service-->
+                    <img src="img/services2.png">
+                    <!--service image-->
                     <button></button> <!-- heart button <3, should it be an image?-->
                     <p>Service title</p>
                     <p>Service description</p>
                 </div>
             </div>
         </div>
-    </body>
+</body>
+
 </html>

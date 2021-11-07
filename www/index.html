@@ -37,18 +37,21 @@
     <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
     <meta name="color-scheme" content="light dark">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="fontFiles/font.css" type="text/css" charset="utf-8">
+    <!-- FONTS -->
+    <link rel="stylesheet" href="fontFiles/GorditaBlack/gorditaBlack.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="fontFiles/GorditaMedium/gorditaMedium.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="fontFiles/GorditaRegular/gorditaRegular.css" type="text/css" charset="utf-8">
     <title>Landing Page</title>
 
     <style>
-        .landing {
-            height: 100%;
+        body {
             background-image: url("img/landingPagelogo.png");
             background-size: cover;
         }
 
         .container {
             height: 100%;
+            /*position: relative;*/
         }
 
         .landingButtons {
@@ -61,7 +64,7 @@
     </style>
 </head>
 
-<body class="landing">
+<body>
     <div class="container">
         <div class="landingButtons">
             <button><a href="quiz/quizIntro.html">Sign Up</a></button>
