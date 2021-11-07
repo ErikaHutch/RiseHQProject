@@ -295,6 +295,7 @@ a:hover{
 /*-----------------------------------------------------------------------------------------------------------------*/
 /*CONTACT*/
 #contact-us-header-wrapper{
+    border-top: black solid 4px;
     color:white;
     background-color: #3FD4C2;
     padding: 15px;
@@ -336,11 +337,18 @@ a:hover{
     background-color: #176671;
 }
 
+#social-media-ics-wrapper{
+    text-align: center;
+    
+}
+
 #social-media-ics-wrapper img{
         width: 50px;
         height: 50px;
         padding: 15px;    
 }
+
+
 
 /*--------------------------------------------------------------------------------------------------------*/
 /* QUIZ PAGES */
