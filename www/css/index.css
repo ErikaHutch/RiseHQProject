@@ -400,7 +400,7 @@ a:hover{
     border: 1px solid #176671;
     color: #176671;
 }
-form{
+#feed-topic-filters-wrappe form{
     margin-left: 10%;
 }
 
@@ -467,6 +467,7 @@ outline: none;
 /*--------------------------------------------------------------------------------------------------------*/
 /* AN ARTICLE*/
 
+/* Background */
 article{
     border-top: solid thick #000000;
     background-image:url(../img/ellipse.png);
@@ -475,6 +476,7 @@ article{
     background-position: -10% 35%;
 }
 
+/* Text */
 article h2{
     padding: 5%;
     background-color: #FFBF00;
@@ -489,6 +491,7 @@ article b{
     color: #FFBF00;
 }
 
+/* Photos */
 #article_photo1{
     float: right;
     width: 50%;
@@ -500,3 +503,35 @@ article b{
     width: 50%;
     padding-right: 2%;
 }
+
+/*--------------------------------------------------------------------------------------------------------*/
+/* SERVICES */
+
+/* Title */
+#services-content{
+    border-top: solid thick #000000;
+    background-image:url(../img/ellipse3.png);
+    background-repeat: no-repeat;
+    background-size: 13%;
+    background-position: 43% 11%;
+    text-align: center;
+}
+#titleSection{
+    margin: 5%;
+    padding-top: 7%;
+}
+#titleSection h1{
+    text-align:left;
+    margin: 5%;
+}
+/* Search bar */
+#services-content input{
+    width:76%;
+    padding:2%;
+    border: 1px solid #176671;
+    color: #176671;
+}
+
+#services-content input:focus {
+    outline: none;
+    }
