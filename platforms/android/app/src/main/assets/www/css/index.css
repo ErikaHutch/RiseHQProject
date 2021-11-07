@@ -19,6 +19,7 @@
 * {
     -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
     font-family: 'gorditablack', Arial, sans-serif; /* adding custom fonts */
+    color:#333333;
     /*font-weight: normal;
     font-style: normal;*/
 }
@@ -31,12 +32,12 @@ body {
     /*background-image:linear-gradient(to bottom, #A7A7A7 0%, #E4E4E4 51%);*/
     /*font-family: system-ui, -apple-system, -apple-system-font, 'Segoe UI', 'Roboto', sans-serif;
     */font-size:12px;
-    height:100vh;
+    /*height:100vh;*/
     margin:0px;
     padding:0px;
     /* Padding to avoid the "unsafe" areas behind notches in the screen */
     padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
-    text-transform:uppercase;
+    /*text-transform:uppercase;*/
     width:100%;
 }
 /* added by Erika so the logo doesnt cover everything, change as you please*/
@@ -44,6 +45,12 @@ header img{
     width:10%;
     padding: 15px;
 }
+
+h3{
+    color:#FFFFFF;
+    text-transform:uppercase;
+}
+
 /* Portrait layout (default) */
 .app {
     background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
@@ -75,6 +82,11 @@ h1 {
     overflow:visible;
     padding:0px;
     text-align:center;
+    text-transform:uppercase;
+}
+
+h2{
+    text-transform:uppercase;
 }
 
 .event {
@@ -116,6 +128,17 @@ h1 {
     }
 }
 
+/* Nav bar */
+header button{
+    float: right;
+    margin: 3% 5%;
+    background:url(../img/icon_menu.png);
+    border: none;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+}
+
 /*----------------------------------------------------------------------------------------------------------------------------*/
 /*HUB*/
 li{
@@ -124,7 +147,11 @@ li{
 
 a{
     text-decoration: none;
-    color: white;
+    /*color: white;*/
+}
+
+ul{
+    padding: 0;
 }
 
 /*Only works when clicked not on hover, needs looking into*/
@@ -133,9 +160,8 @@ a:hover{
 }
 
 .Hub{
-    margin:0;
-    position: relative;
-    padding: 40px;
+    
+    padding: 30px;
     font-weight: bold;
     font-size: 300%;
     max-height: 16%;
@@ -223,6 +249,7 @@ a:hover{
 .profileInfo{
     margin: auto;
     width: 50%;
+    text-align: center;
 }
 
 #user-name-wrapper h1{
@@ -257,6 +284,7 @@ a:hover{
 
 /*-----------------------------------------------------------------------------------------------------------------*/
 /*CONTACT*/
+/*CONTACT*/
 #contact-us-header-wrapper{
     color:white;
     background-color: #3FD4C2;
@@ -276,9 +304,10 @@ a:hover{
 
 /*needs to be at the bottom of the page*/
 .git-btn-wrapper{
-    padding: 20px;
+    padding: 15px;
     font-weight: bold;
     font-size: 300%;
+    text-align: center;
 }
 
 #web-btn{
@@ -296,17 +325,247 @@ a:hover{
 #social-media-ics-wrapper img{
         width: 80px;
         height: 80px;
-        position:relative;
-        display: inline-block;
-        float:left;
+        float: left;
         padding: 15px;
+        
 }
+
 /*--------------------------------------------------------------------------------------------------------*/
-/* QUIZE PAGES */
+/* QUIZ PAGES */
+
 .bar{
     display: block;
     width:100%;
-    padding: 10px 30px;
-    background-color: #FF6A46;
+    padding: 5px;
     font-weight: bold;
+    font-size: 20px;
+    text-align: center;
 }
+
+#questionHead{
+    color: white;
+    font-size: small;
+}
+
+.quiz{
+    background-color: #FEFDFA;
+}
+
+#x{
+    margin-top: 2%;
+    margin-right: 2%;
+    padding: 5px 10px;
+    float: right;
+}
+
+#question{
+    padding: 3% 5%;
+}
+
+#inputName{
+    margin: 25% auto;
+    padding: 1%;
+    display: block;
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+/* ARTICLES*/
+#articles-content{
+    background-image:url(../img/ellipse.png);
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: 2% -0.5%;
+    border-top: solid thick #000000;
+}
+
+/* title*/
+#feed-header-wrapper{
+    margin: 5%;
+    padding-top: 7%;
+}
+
+#feed-header-wrapper h1{
+    text-align:left;
+}
+
+/* filters */
+#feed-topic-filters-wrapper {
+    width: 100%;
+}
+
+#feed-topic-filters-wrapper input, #feed-topic-filters-wrapper button, select {
+    width:25%;
+    float: left;
+    padding: 2%;
+    margin-right: 4%;  
+    border: 1px solid #176671;
+    color: #176671;
+}
+#feed-topic-filters-wrappe form{
+    margin-left: 10%;
+}
+
+#feed-topic-filters-wrapper input:focus {
+outline: none;
+}
+
+#empty{
+    clear: both;
+}
+
+/* articles sections */
+
+.article-wrapper{
+    clear: both;
+    border: solid medium #000000;
+    padding: 5%;
+    margin-top: 5%;
+}
+
+.article-wrapper p{
+    text-transform:lowercase;
+    font-size: small;
+}
+
+.article-wrapper button{
+    float: right;
+    padding: 2%;
+    background:url(../img/icon_heart.png);
+    width: 24px;
+    height: 24px;
+    border: none;
+}
+
+.article-wrapper button:active{
+    background:url(../img/icon_heart_full.png);
+}
+
+.colGreen{
+    color: #176671;
+}
+.colRed{
+    color: #FF3E50;
+}
+.colYellow{
+    color: #FFBF00;
+}
+.colTurqu{
+    color: #3FD4C2;
+}
+
+.oddNum {
+    margin-left: 0%;
+    margin-right: 10%;
+    border-left: none;
+}
+
+.evenNum {
+    margin-left: 10%;
+    margin-right: 0%;
+    border-right: none;
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+/* AN ARTICLE*/
+
+/* Background */
+article{
+    border-top: solid thick #000000;
+    background-image:url(../img/ellipse.png);
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: -10% 35%;
+}
+
+/* Text */
+article h2{
+    padding: 5%;
+    background-color: #FFBF00;
+    margin-top: 0%;
+}
+
+article p{
+    padding: 2% 5%;
+    font-size: smaller;
+}
+article b{
+    color: #FFBF00;
+}
+
+/* Photos */
+#article_photo1{
+    float: right;
+    width: 50%;
+    padding-left: 2%;
+}
+
+#article_photo2{
+    float: left;
+    width: 50%;
+    padding-right: 2%;
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+/* SERVICES */
+
+/* Title */
+#services-content{
+    border-top: solid thick #000000;
+    background-image:url(../img/ellipse3.png);
+    background-repeat: no-repeat;
+    background-size: 13%;
+    background-position: 43% 6%;
+    text-align: center;
+}
+#titleSection{
+    margin: 5%;
+    padding-top: 7%;
+}
+#titleSection h1{
+    text-align:left;
+    margin: 5%;
+}
+/* Search bar */
+#services-content input{
+    width:76%;
+    padding:2%;
+    border: 1px solid #176671;
+    color: #176671;
+}
+
+#services-content input:focus {
+    outline: none;
+}
+
+.servicesContainer{
+    margin:5% 10%;
+    padding:3%;
+    border: 1px solid #176671;
+    text-align: center;
+}
+.servicesContainer img{
+    width:80%;
+}
+
+#servicesMap{
+    width:100%;
+}
+
+#servicesContainerMap{
+    border: none;
+    padding:0px;
+}
+
+.servicesContainer button{
+    float: right;
+    padding: 2%;
+    background:url(../img/icon_heart.png);
+    width: 24px;
+    height: 24px;
+    border: none;;
+}
+
+.servicesContainer button:active{
+    background:url(../img/icon_heart_full.png);
+}
+
