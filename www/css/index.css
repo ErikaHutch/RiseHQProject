@@ -40,11 +40,7 @@ body {
     /*text-transform:uppercase;*/
     width:100%;
 }
-/* added by Erika so the logo doesnt cover everything, change as you please*/
-header img{
-    width:10%;
-    padding: 15px;
-}
+
 
 h3{
     color:#FFFFFF;
@@ -129,14 +125,17 @@ h2{
 }
 
 /* Nav bar */
-header button{
+header a, button{
     float: right;
     margin: 3% 5%;
-    background:url(../img/icon_menu.png);
     border: none;
-    width: 40px;
     height: 40px;
-    background-size: cover;
+
+}
+
+header .logo{
+    width:10%;
+    padding: 15px;
 }
 
 /*----------------------------------------------------------------------------------------------------------------------------*/
