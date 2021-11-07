@@ -202,6 +202,9 @@ a:hover{
 
 /*--------------------------------------------------------------------------------------------------------------*/
 /*ABOUT*/
+#about-content{
+    border-top: solid 4px;
+}
 #who-we-are{
     color:white;
     background-color: #FF9B81;
