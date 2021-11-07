@@ -469,6 +469,10 @@ outline: none;
 
 article{
     border-top: solid thick #000000;
+    background-image:url(../img/ellipse.png);
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: -10% 35%;
 }
 
 article h2{
