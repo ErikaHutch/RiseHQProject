@@ -5,8 +5,8 @@
 <head>
     <meta charset="utf-8">
 
-    <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <!--<meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">-->
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
@@ -14,42 +14,42 @@
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/quiz.css">
     <link rel="stylesheet" href="../fontFiles/font.css" type="text/css" charset="utf-8">
-
-    <title>Quiz Intro</title>
-
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+    <script src="../js/quiz.js"></script>
+    <title>Quiz</title>
 </head>
 
 <body class="quiz">
-
     <div class="headRow">
         <header>
             <!--logo-->
             <img src="../img/RiseBlackVariant.png">
             <!--menu bar button-->
-            <!--<button class="x"><a href="menuBar.html">x</a></button>
-            -->
-            <p id="x"><a href="menuBar.html">x</a></p>
+            <!--<button><a href="menuBar.html">Button</a></button>-->
+            <p id="x"><a href="../menuBar.html">x</a></p>
+
         </header>
     </div>
 
-
     <div class="bar" style="background-color: #FF9B81;">
-        <h3>Welcome to RiseHq!</h3>
+        <h2 id="questionHead">Test</h2>
     </div>
-
 
     <div class="row">
-        <p id="question">We'll be asking some questions because we want to get to know more details about your journey.
+        <p id="question">Test
         </p>
+        <!--Question-->
+        <div id="inputDiv">
+            <!--Containre for question element-->
+            
+            <!--quiz input elemenen-->
+        </div>
     </div>
-
 
     <footer>
 
-
         <div class="rowFooter">
-            <p id="okButton"><a href="quizQuestion1.html">Continue</a></p>
-
+            <p id="okButton" onclick="changeQuestion()">Continue</p>
             <div class="dots">
                 <!--Container for progress circles-->
                 <!--will change dynamically depending on the number of questions, but for now this will work as place holders for visual-->
@@ -62,12 +62,8 @@
                 <span class="dot"></span>
                 <span class="dot"></span>
             </div>
-
         </div>
     </footer>
-
-    <!--<button><a href="quizQuestion.html">Continue</a></button>-->
-
 </body>
 
 </html>

@@ -1,39 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
     <meta name="color-scheme" content="light dark">
     <link rel="stylesheet" href="css/index.css">
-    <!-- FONTS -->
-    <link rel="stylesheet" href="fontFiles/GorditaBlack/gorditaBlack.css" type="text/css" charset="utf-8">
-    <link rel="stylesheet" href="fontFiles/GorditaMedium/gorditaMedium.css" type="text/css" charset="utf-8">
-    <link rel="stylesheet" href="fontFiles/GorditaRegular/gorditaRegular.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="fontFiles/font.css"  type="text/css" charset="utf-8">
     <title>Feed Page</title>
 </head>
-
 <body>
 
 
     <header>
-        <img src="img/RiseBlackVariant.png">
-        <!--logo-->
-        <button><a href="menuBar.html">Button</a></button>
-        <!--menu bar button-->
+        <img class="logo" src="img/RiseBlackVariant.png"> <!--logo-->
+        <a href="menuBar.html"> <img src="img/icon_menu.png"> </a>    
     </header>
 
     <div id="articles-content">
         <div id="feed-header-wrapper">
-
+            
             <h1>Your journey.</h1>
         </div>
         <div id="feed-topic-filters-wrapper">
-
+            
             <form action="#">
                 <input type="text" list="date" placeholder="Sort by">
                 <datalist id="date">
@@ -46,7 +38,7 @@
             <form action="#">
                 <!--<input type="text" list="topics" placeholder="Topics">
                 <datalist id="topics">-->
-                <select>
+                    <select>
                     <option>Topics</option>
                     <option value="Body">Body</option>
                     <option value="Sex">Sex</option>
@@ -54,51 +46,45 @@
                     <option value="Self">Self</option>
                     <option value="Mind">Mind</option>
                     <option value="News">News</option>
-                </select>
+                    </select>
                 <!--</datalist>-->
             </form>
 
             <form action="#"><button>Saved</button></form>
         </div>
         <div>
-            <p id="empty"></p>
-            <!--couldn't find better idea of margin issue with float-->
+            <p id="empty"></p> <!--couldn't find better idea of margin issue with float-->
         </div>
 
         <!--HARDCODED EXAMPLE FOR PROTOTYPE ONLY, CONTENT WILL CHANGE DYNAMICALLY-->
-
+        
         <div id="articles-area-wrapper">
 
-            <div class="article-wrapper oddNum">
+            <a href="article.html"><div class="article-wrapper oddNum">
                 <button type="submit"></button>
                 <h2 id="article-title" class="colGreen">Pregnancy Cravings</h2>
-                <p id="article-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laboriosam
-                    magnam animi maiores quidem aliquam.</p>
-            </div>
-            <div class="article-wrapper evenNum">
+                <p id="article-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laboriosam magnam animi maiores quidem aliquam.</p>
+            </div></a>
+            <a href="article.html"><div class="article-wrapper evenNum">
                 <button type="submit"></button>
                 <h2 id="article-title" class="colRed">Selfcare</h2>
-                <p id="article-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laboriosam
-                    magnam animi maiores quidem aliquam.</p>
-            </div>
-            <div class="article-wrapper oddNum">
+                <p id="article-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laboriosam magnam animi maiores quidem aliquam.</p>
+            </div></a>
+            <a href="article.html"><div class="article-wrapper oddNum">
                 <button type="submit"></button>
                 <h2 id="article-title" class="colYellow">Childbirth Scars</h2>
-                <p id="article-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laboriosam
-                    magnam animi maiores quidem aliquam.</p>
-            </div>
-            <div class="article-wrapper evenNum">
+                <p id="article-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laboriosam magnam animi maiores quidem aliquam.</p>
+            </div></a>
+            <a href="article.html"><div class="article-wrapper evenNum">
                 <button type="submit"></button>
                 <h2 id="article-title" class="colTurqu">Eco Hygiene Products</h2>
-                <p id="article-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laboriosam
-                    magnam animi maiores quidem aliquam.</p>
-            </div>
+                <p id="article-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laboriosam magnam animi maiores quidem aliquam.</p>
+            </div></a>
 
         </div>
-
-
+        
+    
 
     </div>
 </body>
-
 </html>

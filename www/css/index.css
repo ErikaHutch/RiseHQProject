@@ -18,7 +18,7 @@
  */
 * {
     -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
-    font-family: 'gorditamedium', Arial, sans-serif;
+    font-family: 'gorditablack', Arial, sans-serif; /* adding custom fonts */
     color:#333333;
     /*font-weight: normal;
     font-style: normal;*/
@@ -41,18 +41,8 @@ body {
     width:100%;
 }
 
-p{
-    /*font-family: 'gorditaregular', Arial, sans-serif; WERONIKAS FONT */
-    font-family: 'gorditamedium', Arial, sans-serif;
-}
-/* added by Erika so the logo doesnt cover everything, change as you please*/
-header img{
-    width:10%;
-    padding: 15px;
-}
 
 h3{
-    font-family: 'gorditablack', Arial, sans-serif;
     color:#FFFFFF;
     text-transform:uppercase;
 }
@@ -89,12 +79,10 @@ h1 {
     padding:0px;
     text-align:center;
     text-transform:uppercase;
-    font-family: 'gorditablack', Arial, sans-serif;
 }
 
 h2{
     text-transform:uppercase;
-    font-family: 'gorditablack', Arial, sans-serif;
 }
 
 .event {
@@ -137,14 +125,17 @@ h2{
 }
 
 /* Nav bar */
-header button{
+header a, button{
     float: right;
     margin: 3% 5%;
-    background:url(../img/icon_menu.png);
     border: none;
-    width: 40px;
     height: 40px;
-    background-size: cover;
+
+}
+
+header .logo{
+    width:10%;
+    padding: 15px;
 }
 
 /*----------------------------------------------------------------------------------------------------------------------------*/
