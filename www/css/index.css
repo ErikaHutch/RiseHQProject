@@ -284,6 +284,7 @@ a:hover{
 
 /*-----------------------------------------------------------------------------------------------------------------*/
 /*CONTACT*/
+/*CONTACT*/
 #contact-us-header-wrapper{
     color:white;
     background-color: #3FD4C2;
@@ -303,9 +304,10 @@ a:hover{
 
 /*needs to be at the bottom of the page*/
 .git-btn-wrapper{
-    padding: 20px;
+    padding: 15px;
     font-weight: bold;
     font-size: 300%;
+    text-align: center;
 }
 
 #web-btn{
@@ -323,10 +325,9 @@ a:hover{
 #social-media-ics-wrapper img{
         width: 80px;
         height: 80px;
-        position:relative;
-        display: inline-block;
-        float:left;
+        float: left;
         padding: 15px;
+        
 }
 
 /*--------------------------------------------------------------------------------------------------------*/
