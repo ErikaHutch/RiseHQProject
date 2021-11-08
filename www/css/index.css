@@ -151,7 +151,7 @@ li{
     list-style-type: none;
 }
 
-a{
+.hubLink{
     text-decoration: none;
     /*color: white;*/
 }
