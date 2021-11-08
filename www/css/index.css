@@ -147,16 +147,16 @@ header .logo{
 
 /*----------------------------------------------------------------------------------------------------------------------------*/
 /*HUB*/
-li{
+#HubList li{
     list-style-type: none;
 }
 
-a{
+.hubLink{
     text-decoration: none;
     /*color: white;*/
 }
 
-ul{
+#HubList{
     padding: 0;
 }
 
