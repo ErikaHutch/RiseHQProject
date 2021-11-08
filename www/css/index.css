@@ -420,6 +420,9 @@ a:hover{
     border: 1px solid #176671;
     color: #176671;
 }
+#feed-topic-filters-wrapper select:focus {
+    outline: none;
+}
 
 #feed-topic-filters-wrapper button{
     width:25%;
@@ -552,28 +555,33 @@ article b{
 }
 /* Search bar */
 #services-content select{
-    width:76%;
+    width:80%;
     padding:2%;
-    border: 1px solid #176671;
-    color: #176671;
+    margin-top: 2%;
+    border: 1px solid #FF9B81;
+    font-family: 'gorditamedium', Arial, sans-serif;
 }
 
-#services-content input:focus {
+#services-content select:focus {
     outline: none;
 }
 
 .servicesContainer{
     margin:5% 10%;
     padding:3%;
-    border: 1px solid #176671;
+    border: 1px solid #FF9B81;
     text-align: center;
 }
 .servicesContainer img{
     width:80%;
+    padding-left: 9%;
 }
 
 #servicesMap{
     width:100%;
+    margin-top: 5%;
+    border-top: 5px solid #FF9B81;
+    border-bottom: 5px solid #FF9B81;
 }
 
 #servicesContainerMap{
@@ -594,3 +602,7 @@ article b{
     background:url(../img/icon_heart_full.png);
 }
 
+.servicesContainer h3{
+    color: #333333;
+    font-family: 'gorditamedium', Arial, sans-serif;
+}
