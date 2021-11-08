@@ -18,10 +18,15 @@
  */
 * {
     -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
-    font-family: 'gorditablack', Arial, sans-serif; /* adding custom fonts */
+     /* adding custom fonts */
+     font-family: 'gorditaregular', Arial, sans-serif;
     color:#333333;
     /*font-weight: normal;
     font-style: normal;*/
+}
+
+p{ 
+    font-family: 'gorditamedium', Arial, sans-serif;
 }
 
 body {
@@ -40,15 +45,12 @@ body {
     /*text-transform:uppercase;*/
     width:100%;
 }
-/* added by Erika so the logo doesnt cover everything, change as you please*/
-header img{
-    width:10%;
-    padding: 15px;
-}
+
 
 h3{
     color:#FFFFFF;
     text-transform:uppercase;
+    font-family: 'gorditablack', Arial, sans-serif;
 }
 
 /* Portrait layout (default) */
@@ -83,10 +85,12 @@ h1 {
     padding:0px;
     text-align:center;
     text-transform:uppercase;
+    font-family: 'gorditablack', Arial, sans-serif;
 }
 
 h2{
     text-transform:uppercase;
+    font-family: 'gorditablack', Arial, sans-serif;
 }
 
 .event {
@@ -129,14 +133,16 @@ h2{
 }
 
 /* Nav bar */
-header button{
+header a{
     float: right;
     margin: 3% 5%;
-    background:url(../img/icon_menu.png);
     border: none;
-    width: 40px;
     height: 40px;
-    background-size: cover;
+}
+
+header .logo{
+    width:10%;
+    padding: 15px;
 }
 
 /*----------------------------------------------------------------------------------------------------------------------------*/
@@ -195,6 +201,9 @@ a:hover{
 
 /*--------------------------------------------------------------------------------------------------------------*/
 /*ABOUT*/
+#about-content{
+    border-top: solid 4px;
+}
 #who-we-are{
     color:white;
     background-color: #FF9B81;
@@ -284,11 +293,12 @@ a:hover{
 
 /*-----------------------------------------------------------------------------------------------------------------*/
 /*CONTACT*/
-/*CONTACT*/
 #contact-us-header-wrapper{
+    border-top: black solid 4px;
     color:white;
     background-color: #3FD4C2;
     padding: 15px;
+    text-align: center;
 }
 
 #contact-us-header-wrapper h1{
@@ -302,11 +312,15 @@ a:hover{
     font-size: large;
 }
 
+#contact-us-img{
+    padding: 5%;
+}
+
 /*needs to be at the bottom of the page*/
 .git-btn-wrapper{
-    padding: 15px;
+    padding: 10px;
     font-weight: bold;
-    font-size: 300%;
+    font-size: 200%;
     text-align: center;
 }
 
@@ -322,13 +336,18 @@ a:hover{
     background-color: #176671;
 }
 
-#social-media-ics-wrapper img{
-        width: 80px;
-        height: 80px;
-        float: left;
-        padding: 15px;
-        
+#social-media-ics-wrapper{
+    text-align: center;
+    
 }
+
+#social-media-ics-wrapper img{
+        width: 50px;
+        height: 50px;
+        padding: 15px;    
+}
+
+
 
 /*--------------------------------------------------------------------------------------------------------*/
 /* QUIZ PAGES */
@@ -393,7 +412,7 @@ a:hover{
     width: 100%;
 }
 
-#feed-topic-filters-wrapper input, #feed-topic-filters-wrapper button, select {
+#feed-topic-filters-wrapper select{
     width:25%;
     float: left;
     padding: 2%;
@@ -401,12 +420,18 @@ a:hover{
     border: 1px solid #176671;
     color: #176671;
 }
-#feed-topic-filters-wrappe form{
-    margin-left: 10%;
+
+#feed-topic-filters-wrapper button{
+    width:25%;
+    float: left;
+    padding: 2.25% 2%;
+    margin-right: 4%;  
+    border: 1px solid #176671;
+    color: #176671;
 }
 
-#feed-topic-filters-wrapper input:focus {
-outline: none;
+#feed-topic-filters-wrapper form{
+    margin-left: 10%;
 }
 
 #empty{
@@ -526,7 +551,7 @@ article b{
     margin: 5%;
 }
 /* Search bar */
-#services-content input{
+#services-content select{
     width:76%;
     padding:2%;
     border: 1px solid #176671;

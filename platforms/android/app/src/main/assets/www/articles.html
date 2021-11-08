@@ -8,60 +8,78 @@
     <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
     <meta name="color-scheme" content="light dark">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="fontFiles/font.css"  type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="fontFiles/gorditaBlack/gorditaBlack.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="fontFiles/gorditaMedium/gorditaMedium.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="fontFiles/gorditaRegular/groditaRegular.css" type="text/css" charset="utf-8">
+
     <title>Feed Page</title>
 </head>
 <body>
 
 
     <header>
-        <img src="img/RiseBlackVariant.png"> <!--logo-->
-        <button><a href="menuBar.html">Button</a></button><!--menu bar button-->
+        <img class="logo" src="img/RiseBlackVariant.png"> <!--logo-->
+        <a href="menuBar.html"> <img src="img/icon_menu.png"> </a>    
     </header>
 
     <div id="articles-content">
-        <div id="feed-header-wrapper"><h1>Your jouney.</h1></div>
+        <div id="feed-header-wrapper">
+            
+            <h1>Your journey.</h1>
+        </div>
         <div id="feed-topic-filters-wrapper">
             
             <form action="#">
-                <input type="text" list="date">
-                <datalist id="date">
-                    <option value="Sort by">
-                    <option value="Default">
-                    <option value="Newest">
-                    <option value="Oldest">
-                </datalist>
+                <select>
+                    <option>Sort by</option>
+                    <option value="Default">Default</option>
+                    <option value="Newest">Newest</option>
+                    <option value="Oldest">Oldest</option>
+                </select>
             </form>
 
             <form action="#">
-                <input type="text" list="topics">
-                <datalist id="topics">
-                    <option value="Topics">
-                    <option value="Body">
-                    <option value="Sex">
-                    <option value="Life">
-                    <option value="Self">
-                    <option value="Mind">
-                    <option value="News">
-                </datalist>
+                    <select>
+                    <option>Topics</option>
+                    <option value="Body">Body</option>
+                    <option value="Sex">Sex</option>
+                    <option value="Life">Life</option>
+                    <option value="Self">Self</option>
+                    <option value="Mind">Mind</option>
+                    <option value="News">News</option>
+                    </select>
             </form>
 
             <form action="#"><button>Saved</button></form>
+        </div>
+        <div>
+            <p id="empty"></p> <!--couldn't find better idea of margin issue with float-->
         </div>
 
         <!--HARDCODED EXAMPLE FOR PROTOTYPE ONLY, CONTENT WILL CHANGE DYNAMICALLY-->
         
         <div id="articles-area-wrapper">
 
-            <div class="article-wrapper">
-                <button type="submit">Love react</button>
-                <h2 id="article-title">Pregnancy Cravings</h2>
-                <p id="article-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laboriosam magnam animi maiores quidem aliquam, itaque distinctio, perferendis culpa facilis, ratione officiis voluptates! Perspiciatis eaque sint dignissimos veritatis, placeat molestiae.</p>
-            </div>
-            <div class="article-wrapper evenNum">
-            </div>
+            <a href="article.html"><div class="article-wrapper oddNum">
+                <button type="submit"></button>
+                <h2 id="article-title" class="colGreen">Pregnancy Cravings</h2>
                 <p id="article-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laboriosam magnam animi maiores quidem aliquam.</p>
-            </div>
+            </div></a>
+            <a href="article.html"><div class="article-wrapper evenNum">
+                <button type="submit"></button>
+                <h2 id="article-title" class="colRed">Selfcare</h2>
+                <p id="article-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laboriosam magnam animi maiores quidem aliquam.</p>
+            </div></a>
+            <a href="article.html"><div class="article-wrapper oddNum">
+                <button type="submit"></button>
+                <h2 id="article-title" class="colYellow">Childbirth Scars</h2>
+                <p id="article-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laboriosam magnam animi maiores quidem aliquam.</p>
+            </div></a>
+            <a href="article.html"><div class="article-wrapper evenNum">
+                <button type="submit"></button>
+                <h2 id="article-title" class="colTurqu">Eco Hygiene Products</h2>
+                <p id="article-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laboriosam magnam animi maiores quidem aliquam.</p>
+            </div></a>
 
         </div>
         
