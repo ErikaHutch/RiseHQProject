@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="../fontFiles/GorditaRegular/gorditaRegular.css" type="text/css" charset="utf-8">
 
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+    <script src="../js/jquery.js"></script>
     <script src="../js/quiz.js"></script>
     <title>Quiz</title>
 </head>
@@ -52,18 +53,12 @@
     <footer>
 
         <div class="rowFooter">
-            <p id="okButton" onclick="changeQuestion()">Continue</p>
-            <div class="dots">
+            <p id="okButton" onclick="nextQuestion()">Continue</p>
+            <div class="dots" id="dots">
                 <!--Container for progress circles-->
                 <!--will change dynamically depending on the number of questions, but for now this will work as place holders for visual-->
                 <!--progress circles-->
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
+
             </div>
         </div>
     </footer>
