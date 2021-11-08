@@ -30,17 +30,15 @@
         <div id="feed-topic-filters-wrapper">
             
             <form action="#">
-                <input type="text" list="date" placeholder="Sort by">
-                <datalist id="date">
-                    <option value="Default">
-                    <option value="Newest">
-                    <option value="Oldest">
-                </datalist>
+                <select>
+                    <option>Sort by</option>
+                    <option value="Default"></option>
+                    <option value="Newest"></option>
+                    <option value="Oldest"></option>
+                </select>
             </form>
 
             <form action="#">
-                <!--<input type="text" list="topics" placeholder="Topics">
-                <datalist id="topics">-->
                     <select>
                     <option>Topics</option>
                     <option value="Body">Body</option>
@@ -50,7 +48,6 @@
                     <option value="Mind">Mind</option>
                     <option value="News">News</option>
                     </select>
-                <!--</datalist>-->
             </form>
 
             <form action="#"><button>Saved</button></form>

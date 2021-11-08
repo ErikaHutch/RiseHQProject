@@ -133,12 +133,11 @@ h2{
 }
 
 /* Nav bar */
-header a, button{
+header a{
     float: right;
     margin: 3% 5%;
     border: none;
     height: 40px;
-
 }
 
 header .logo{
@@ -413,7 +412,7 @@ a:hover{
     width: 100%;
 }
 
-#feed-topic-filters-wrapper input, #feed-topic-filters-wrapper button, select {
+#feed-topic-filters-wrapper select{
     width:25%;
     float: left;
     padding: 2%;
@@ -421,12 +420,18 @@ a:hover{
     border: 1px solid #176671;
     color: #176671;
 }
-#feed-topic-filters-wrappe form{
-    margin-left: 10%;
+
+#feed-topic-filters-wrapper button{
+    width:25%;
+    float: left;
+    padding: 2.25% 2%;
+    margin-right: 4%;  
+    border: 1px solid #176671;
+    color: #176671;
 }
 
-#feed-topic-filters-wrapper input:focus {
-outline: none;
+#feed-topic-filters-wrapper form{
+    margin-left: 10%;
 }
 
 #empty{
