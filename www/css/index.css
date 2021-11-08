@@ -606,3 +606,34 @@ article b{
     color: #333333;
     font-family: 'gorditamedium', Arial, sans-serif;
 }
+
+/* Menu */
+#menuColours{
+    padding:0%;
+}
+#menuColours li{
+    padding: 5%;
+    margin: 5% 0%;
+    font-family: 'gorditablack', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 200%;
+    text-decoration: none;
+}
+#menuColour1{
+    background-color: #FF9B81;
+}
+#menuColour2{
+    background-color: #FF6A46;
+}
+#menuColour3{
+    background-color: #FF3E50
+}
+#menuColour4{
+    background-color: #FFBF00;
+}
+#menuColour5{
+    background-color: #3FD4C2;
+}
+#menuColour6{
+    background-color: #176671
+}
