@@ -551,7 +551,7 @@ article b{
     margin: 5%;
 }
 /* Search bar */
-#services-content input{
+#services-content select{
     width:76%;
     padding:2%;
     border: 1px solid #176671;
