@@ -134,6 +134,10 @@ h2{
     }
 }
 
+a{
+    text-decoration: none;
+}
+
 /* Nav bar */
 header a{
     float: right;
@@ -415,6 +419,7 @@ a:hover{
 
 #feed-header-wrapper h1{
     text-align:left;
+    color: black;
 }
 
 /* filters */
@@ -562,6 +567,7 @@ article b{
 #titleSection h1{
     text-align:left;
     margin: 5%;
+    color: black;
 }
 /* Search bar */
 #services-content select{
