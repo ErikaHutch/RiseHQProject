@@ -202,9 +202,6 @@ a:hover{
 
 /*--------------------------------------------------------------------------------------------------------------*/
 /*ABOUT*/
-#about-content{
-    border-top: solid 4px;
-}
 #who-we-are{
     color:white;
     background-color: #FF9B81;
@@ -247,6 +244,11 @@ a:hover{
 
 /*------------------------------------------------------------------------------------------------------*/
 /*PROFILE*/
+
+#profileContainer{
+    border-top: solid 4px;
+}
+
 #profilePic{
     border-radius: 50%;;
     width: 150px;
@@ -254,6 +256,7 @@ a:hover{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding: 3%;
 }
 
 .profileInfo{
@@ -264,6 +267,7 @@ a:hover{
 
 #user-name-wrapper h1{
     padding-top: 5px;
+    color: black;
 }
 
 .p-btn-wrapper{
@@ -272,6 +276,11 @@ a:hover{
     font-weight: bold;
     font-size: 150%;
     text-align: center;
+}
+
+.p-btn-wrapper a{
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 #save-btn{
