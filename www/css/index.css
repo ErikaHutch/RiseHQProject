@@ -206,6 +206,9 @@ a:hover{
 
 /*--------------------------------------------------------------------------------------------------------------*/
 /*ABOUT*/
+#about-content{
+    border-top: solid 4px black;
+}
 #who-we-are{
     color:white;
     background-color: #FF9B81;
@@ -336,6 +339,11 @@ a:hover{
     font-weight: bold;
     font-size: 200%;
     text-align: center;
+}
+
+.git-btn-wrapper a{
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 #web-btn{
