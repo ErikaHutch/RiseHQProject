@@ -86,11 +86,13 @@ h1 {
     text-align:center;
     text-transform:uppercase;
     font-family: 'gorditablack', Arial, sans-serif;
+    color: #FFFFFF;
 }
 
 h2{
     text-transform:uppercase;
     font-family: 'gorditablack', Arial, sans-serif;
+    color: #FFFFFF;
 }
 
 .event {
@@ -151,9 +153,9 @@ header .logo{
     list-style-type: none;
 }
 
-a {
+#HubList a {
     text-decoration: none;
-    /*color: white;*/
+    color: white;
 }
 
 #HubList{
@@ -166,7 +168,6 @@ a:hover{
 }
 
 .Hub{
-    
     padding: 30px;
     font-weight: bold;
     font-size: 300%;
