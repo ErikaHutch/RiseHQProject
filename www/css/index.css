@@ -388,11 +388,15 @@ a:hover{
 
 #questionHead{
     color: white;
-    font-size: small;
+    font-size: medium;
 }
 
 .quiz{
     background-color: #FEFDFA;
+    background-image: url(../img/quizBg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
 }
 
 #x{
