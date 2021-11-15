@@ -251,7 +251,6 @@ a:hover{
 
 /*------------------------------------------------------------------------------------------------------*/
 /*PROFILE*/
-
 #profileContainer{
     border-top: solid 4px;
 }
@@ -263,7 +262,7 @@ a:hover{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding: 3%;
+    padding: 2%;
 }
 
 .profileInfo{
@@ -273,13 +272,12 @@ a:hover{
 }
 
 #user-name-wrapper h1{
-    padding-top: 5px;
     color: black;
 }
 
 .p-btn-wrapper{
-    padding: 25px;
-    margin: 30px;
+    padding: 20px;
+    margin: 25px;
     font-weight: bold;
     font-size: 150%;
     text-align: center;
