@@ -305,6 +305,7 @@ header .logo{
 .p-btn-wrapper a{
     text-decoration: none;
     color: #FFFFFF;
+    text-transform: uppercase;
 }
 
 #save-btn{
