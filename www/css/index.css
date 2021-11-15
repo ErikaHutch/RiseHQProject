@@ -177,19 +177,17 @@ header .logo{
     bottom: 0;
 }
 
-/*Only works when clicked not on hover, needs looking into*/
-
 .hubHolder{
     min-height: 100%;
     width:100%;
 }
 
-a:hover{
+#HubList li a:hover{
     text-decoration: underline;
 }
 
 .Hub{
-    padding: 30px;
+    padding: 10%;
     font-weight: bold;
     font-size: 250%;
     max-height: 50%;
