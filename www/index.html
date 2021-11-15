@@ -37,22 +37,25 @@
     <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
     <meta name="color-scheme" content="light dark">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/quizz.css">
     <link rel="stylesheet" href="fontFiles/gorditaBlack/gorditaBlack.css" type="text/css" charset="utf-8">
     <link rel="stylesheet" href="fontFiles/gorditaMedium/gorditaMedium.css" type="text/css" charset="utf-8">
     <link rel="stylesheet" href="fontFiles/gorditaRegular/groditaRegular.css" type="text/css" charset="utf-8">
     <title>Landing Page</title>
 
     <style>
-        body{
+        body {
             height: 100vh;
+            width: 100%;
             background-image: url("img/80.png");
-            background-size: cover;      
-            background-position: center; 
+            background-size: cover;
+            background-position: center;
+            width: 100%;
         }
 
         .container {
-            width:100%;
-            height: 100%;     
+            width: 100%;
+            height: 100%;
         }
 
         .landingButtons {
@@ -63,7 +66,15 @@
             transform: translate(-50%);
         }
 
-        .logo{
+        #lanBut {
+            background-color: #FFbf00;
+            padding: 8% 12%;
+            text-align: center;
+            width: 100%;
+            font-weight: bold;
+        }
+
+        .logo {
             display: inline-block;
             color: white;
             padding: 2%;
@@ -78,9 +89,10 @@
             <header>
                 <!--logo-->
                 <div class="logo">
-                    <h1 style="color: white;">RISE</h1><h1 style="color: white;">HQ</h1>
+                    <h1 style="color: white;">RISE</h1>
+                    <h1 style="color: white;">HQ</h1>
                 </div>
-                
+
                 <!--menu bar button-->
                 <!--<button><a href="menuBar.html">Button</a></button>-->
                 <p id="x"><a href="../menuBar.html">x</a></p>
@@ -90,9 +102,12 @@
 
 
         <div class="landingButtons">
-            <button><a href="quiz/quizIntro.html">Sign Up</a></button>
+            <p id="lanBut"><a href="quiz/quizIntro.html">Start Your Journey</a></p>
+            <!--<button><a href="quiz/quizIntro.html">Sign Up</a></button>-->
+
             <!--sign in-->
-            <button><a href="hub.html">Browse</a></button>
+            <p id="lanBut"><a href="hub.html">Take a peak</a></p>
+            <!--<button><a href="hub.html">Browse</a></button>-->
             <!--browse-->
         </div>
 
