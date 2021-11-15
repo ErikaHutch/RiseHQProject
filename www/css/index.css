@@ -211,18 +211,20 @@ a:hover{
 }
 #who-we-are{
     color:white;
-    background-color: #FF9B81;
+    background-color: #FF3E50;
     padding: 15px;
+    border-bottom: #FFBF00 4px solid;
 }
 
 #who-we-are h1{
     font-weight: bold;
     text-align: left;
+    border: #FF9B81 4px solid;
+    padding: 2%;
 }
 
 #w-w-a-p{
     margin:20px;
-    /*This needs not be uppercase*/
 }
 
 #AboutImg{
@@ -234,8 +236,9 @@ a:hover{
 
 #what-we-do{
     color:white;
-    background-color: #3FD4C2;
+    background-color: #176671;
     padding: 15px;
+    border-bottom: #FF6A46 4px solid;
 }
 
 #what-we-do h1{
@@ -245,6 +248,8 @@ a:hover{
 
 #w-w-d-p{
     margin:20px;
+    border: #FF9B81 4px solid;
+    padding: 2%;
 }
 
 
