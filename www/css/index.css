@@ -465,6 +465,7 @@ header .logo{
     margin-right: 4%;  
     border: 1px solid #333333;
     color: #333333;
+    background-color: #FEFDFA;
     text-transform: uppercase;
 }
 
@@ -495,11 +496,10 @@ header .logo{
 .article-wrapper{
     clear: both;
     padding: 5%;
-    margin-top: 5%;
+    margin: 5%;
 }
 
 .article-wrapper p{
-    text-transform:lowercase;
     font-size: small;
 }
 
@@ -507,6 +507,7 @@ header .logo{
     float: right;
     padding: 2%;
     background:url(../img/icon_heart.png);
+    background-repeat: no-repeat;
     width: 24px;
     height: 24px;
     border: none;
