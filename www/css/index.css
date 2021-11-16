@@ -277,7 +277,7 @@ header .logo{
 
 #profilePic{
     border-radius: 50%;;
-    width: 150px;
+    width: 40%;
     height: auto;
     display: block;
     margin-left: auto;
@@ -296,8 +296,8 @@ header .logo{
 }
 
 .p-btn-wrapper{
-    padding: 20px;
-    margin: 25px;
+    padding: 5%;
+    margin: 6%;
     font-weight: bold;
     font-size: 150%;
     text-align: center;
