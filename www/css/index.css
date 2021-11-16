@@ -458,16 +458,17 @@ header .logo{
 /* filters */
 #feed-topic-filters-wrapper {
     width: 100%;
+    margin-left: -5%;
 }
 
 #feed-topic-filters-wrapper select{
     width:30%;
     float: left;
     padding: 2%;
-    margin-right: 4%;  
+    margin-right: 4%; 
     border: 1px solid #333333;
     color: #333333;
-    background-color: #FEFDFA;
+    background-color: #FFFFFF;
     text-transform: uppercase;
 }
 
@@ -476,12 +477,12 @@ header .logo{
 }
 
 #feed-topic-filters-wrapper button{
-    width:25%;
+    width:32%;
     float: left;
     padding: 2.25% 2%;
-    margin-right: 4%;  
     border: 1px solid #333333;
     color: #333;
+    background-color: #FFFFFF;
     text-transform: uppercase;
 }
 
@@ -717,10 +718,10 @@ article b{
 #menuColour1{
     background-color: #FF9B81;
 }
-#menuColour2{
+#menuColour3{
     background-color: #FF6A46;
 }
-#menuColour3{
+#menuColour2{
     background-color: #FF3E50
 }
 #menuColour4{
