@@ -435,10 +435,10 @@ header .logo{
 /*--------------------------------------------------------------------------------------------------------*/
 /* ARTICLES*/
 #articles-content{
-    background-image:url(../img/ellipse.png);
+    /*background-image:url(../img/ellipse.png);
     background-repeat: no-repeat;
     background-size: 20%;
-    background-position: 2% -0.5%;
+    background-position: 2% -0.5%;*/
     border-top: solid thick #000000;
 }
 
@@ -459,13 +459,15 @@ header .logo{
 }
 
 #feed-topic-filters-wrapper select{
-    width:25%;
+    width:30%;
     float: left;
     padding: 2%;
     margin-right: 4%;  
-    border: 1px solid #176671;
-    color: #176671;
+    border: 1px solid #333333;
+    color: #333333;
+    text-transform: uppercase;
 }
+
 #feed-topic-filters-wrapper select:focus {
     outline: none;
 }
@@ -475,8 +477,9 @@ header .logo{
     float: left;
     padding: 2.25% 2%;
     margin-right: 4%;  
-    border: 1px solid #176671;
-    color: #176671;
+    border: 1px solid #333333;
+    color: #333;
+    text-transform: uppercase;
 }
 
 #feed-topic-filters-wrapper form{
@@ -491,7 +494,6 @@ header .logo{
 
 .article-wrapper{
     clear: both;
-    border: solid medium #000000;
     padding: 5%;
     margin-top: 5%;
 }
@@ -514,12 +516,18 @@ header .logo{
     background:url(../img/icon_heart_full.png);
 }
 
-.colGreen{
-    color: #176671;
+.colPink{
+    color: #FF9B81;
 }
+
 .colRed{
     color: #FF3E50;
 }
+
+.colOrange{
+    color: #FF6A46;
+}
+
 .colYellow{
     color: #FFBF00;
 }
@@ -527,7 +535,11 @@ header .logo{
     color: #3FD4C2;
 }
 
-.oddNum {
+.colGreen{
+    color: #176671;
+}
+
+/*.oddNum {
     margin-left: 0%;
     margin-right: 10%;
     border-left: none;
@@ -537,7 +549,34 @@ header .logo{
     margin-left: 10%;
     margin-right: 0%;
     border-right: none;
+}*/
+
+.body{
+    border-top: solid #FF9B81;
 }
+
+.sex{
+    border-top: solid #FF3E50;
+}
+
+.life{
+    border-top: solid #FF6A46;    
+}
+
+.self{
+    border-top: solid #FFBF00;
+}
+
+.mind{
+    border-top: solid #3FD4C2;
+}
+
+.news{
+    border-top: solid #176671;
+}
+
+
+
 
 /*--------------------------------------------------------------------------------------------------------*/
 /* AN ARTICLE*/
