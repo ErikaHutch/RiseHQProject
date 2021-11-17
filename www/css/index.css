@@ -53,11 +53,11 @@ ul{
     padding-inline-start: 0px;
 }
 
-h3, li{
+h3, li {
     color:#FFFFFF;
     text-transform:uppercase;
-    font-family: 'gorditablack', Arial, sans-serif !important;
-    font-weight: bold !important;
+    font-family: 'gorditablack', Arial, sans-serif /*!important*/;
+    font-weight: bold /*!important*/;
     padding: 0;
 }
 
@@ -520,26 +520,26 @@ header .logo{
     background:url(../img/icon_heart_full.png);
 }
 
-.colPink{
+.colBody{
     color: #FF9B81;
 }
 
-.colRed{
+.colSex{
     color: #FF3E50;
 }
 
-.colOrange{
+.colLife{
     color: #FF6A46;
 }
 
-.colYellow{
+.colSelf{
     color: #FFBF00;
 }
-.colTurqu{
+.colMind{
     color: #3FD4C2;
 }
 
-.colGreen{
+.colNews{
     color: #176671;
 }
 
@@ -555,27 +555,27 @@ header .logo{
     border-right: none;
 }*/
 
-.body{
+.borderBody{
     border-top: solid #FF9B81;
 }
 
-.sex{
+.borderSex{
     border-top: solid #FF3E50;
 }
 
-.life{
+.borderLife{
     border-top: solid #FF6A46;    
 }
 
-.self{
+.borderSelf{
     border-top: solid #FFBF00;
 }
 
-.mind{
+.borderMind{
     border-top: solid #3FD4C2;
 }
 
-.news{
+.borderNews{
     border-top: solid #176671;
 }
 
@@ -584,6 +584,30 @@ header .logo{
 
 /*--------------------------------------------------------------------------------------------------------*/
 /* AN ARTICLE*/
+
+/* Colours*/
+.backBody{
+    background-color: #FF9B81;
+}
+
+.backSex{
+    background-color: #FF3E50;
+}
+
+.backLife{
+    background-color: #FF6A46;
+}
+
+.backSelf{
+    background-color: #FFBF00;
+}
+.backMind{
+    background-color: #3FD4C2;
+}
+
+.backNews{
+    background-color: #176671;
+}
 
 /* Background */
 article{
@@ -597,16 +621,26 @@ article{
 /* Text */
 article h2{
     padding: 5%;
-    background-color: #FFBF00;
     margin-top: 0%;
 }
 
 article p{
     padding: 2% 5%;
     font-size: smaller;
+    font-family: 'gorditamedium', Arial, sans-serif;
 }
-article b{
-    color: #FFBF00;
+
+article li{
+    padding: 0% 5%;
+    font-size: smaller;
+    font-family: 'gorditamedium', Arial, sans-serif;
+    text-transform: lowercase;
+    color: #000000;
+    font-weight: normal;
+    text-decoration-style: initial;
+}
+article ul.a{
+    list-style-type: circle;
 }
 
 /* Photos */
