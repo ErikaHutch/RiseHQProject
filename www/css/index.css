@@ -637,10 +637,10 @@ article li{
     text-transform: lowercase;
     color: #000000;
     font-weight: normal;
-    text-decoration-style: initial;
-}
-article ul.a{
     list-style-type: circle;
+}
+article ul{
+    list-style-type:circle;
 }
 
 /* Photos */
@@ -662,11 +662,12 @@ article ul.a{
 /* Title */
 #services-content{
     border-top: solid thick #000000;
-    background-image:url(../img/ellipse3.png);
+    /*background-image:url(../img/ellipse3.png);
     background-repeat: no-repeat;
     background-size: 13%;
-    background-position: 43% 6%;
+    background-position: 43% 6%;*/
     text-align: center;
+    background-color: #FFBF00;
 }
 #titleSection{
     margin: 5%;
@@ -675,14 +676,17 @@ article ul.a{
 #titleSection h1{
     text-align:left;
     margin: 5%;
-    color: black;
+    color: #FEFDFA;
 }
 /* Search bar */
 #services-content select{
     width:80%;
     padding:2%;
-    margin-top: 2%;
-    border: 1px solid #FF9B81;
+    margin-top: 5%;
+    border: 1px solid #333333;
+    color: #333333;
+    background-color: #FFFFFF;
+    text-transform: uppercase;
     font-family: 'gorditamedium', Arial, sans-serif;
 }
 
@@ -693,7 +697,6 @@ article ul.a{
 .servicesContainer{
     margin:5% 10%;
     padding:3%;
-    border: 1px solid #FF9B81;
     text-align: center;
 }
 .servicesContainer img{
@@ -703,14 +706,7 @@ article ul.a{
 
 #servicesMap{
     width:100%;
-    margin-top: 5%;
-    border-top: 5px solid #FF9B81;
-    border-bottom: 5px solid #FF9B81;
-}
-
-#servicesContainerMap{
-    border: none;
-    padding:0px;
+    margin:5% 0%;
 }
 
 .servicesContainer button{
@@ -729,6 +725,10 @@ article ul.a{
 .servicesContainer h3{
     color: #333333;
     font-family: 'gorditamedium', Arial, sans-serif;
+}
+
+.servicesBack{
+    background-color: #FFBF00;
 }
 
 /* Menu */
