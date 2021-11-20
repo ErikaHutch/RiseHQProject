@@ -612,10 +612,10 @@ header .logo{
 /* Background */
 article{
     border-top: solid thick #000000;
-    background-image:url(../img/ellipse.png);
+    /*background-image:url(../img/ellipse.png);
     background-repeat: no-repeat;
     background-size: 20%;
-    background-position: -10% 35%;
+    background-position: -10% 35%;*/
 }
 
 /* Text */
@@ -634,7 +634,7 @@ article li{
     padding: 0% 5%;
     font-size: smaller;
     font-family: 'gorditamedium', Arial, sans-serif;
-    text-transform: lowercase;
+    text-transform: none;
     color: #000000;
     font-weight: normal;
     list-style-type: circle;
@@ -644,17 +644,24 @@ article ul{
 }
 
 /* Photos */
-#article_photo1{
+#abuse1{
     float: right;
-    width: 50%;
+    width: 60%;
     padding-left: 2%;
+    margin-top: 1em;
+    padding-top: 2%;
+}
+#abuse2{
+    width:100%;
 }
 
-#article_photo2{
+#abuse3{
     float: left;
     width: 50%;
     padding-right: 2%;
+    padding-top: 2%;
 }
+
 
 /*--------------------------------------------------------------------------------------------------------*/
 /* SERVICES */
