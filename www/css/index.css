@@ -631,13 +631,14 @@ article p{
 }
 
 article li{
-    padding: 0% 5%;
+    padding: 0%;
     font-size: smaller;
     font-family: 'gorditamedium', Arial, sans-serif;
     text-transform: none;
     color: #000000;
     font-weight: normal;
-    list-style-type: circle;
+    list-style-type:square;
+    margin: 0% 12%;
 }
 article ul{
     list-style-type:circle;
@@ -657,7 +658,7 @@ article ul{
 
 #abuse3{
     float: left;
-    width: 50%;
+    width: 60%;
     padding-right: 2%;
     padding-top: 2%;
 }
