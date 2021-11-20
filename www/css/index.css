@@ -662,6 +662,14 @@ article ul{
     padding-right: 2%;
     padding-top: 2%;
 }
+.abuseHelp{
+    margin-left: 10%;
+    margin-right: 10%;
+    border-left:solid 2px #FFBF00;
+}
+article h3{
+    color:black;
+}
 
 
 /*--------------------------------------------------------------------------------------------------------*/
