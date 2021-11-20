@@ -645,23 +645,19 @@ article li{
     list-style-type:square;
     margin: 0% 12%;
 }
-article ul{
-    list-style-type:circle;
-}
-
 /* Photos */
-#abuse1{
+#abuse1, #decision2{
     float: right;
     width: 60%;
     padding-left: 2%;
     margin-top: 1em;
     padding-top: 2%;
 }
-#abuse2{
+#abuse2, #decision3{
     width:100%;
 }
 
-#abuse3{
+#abuse3, #decision1{
     float: left;
     width: 60%;
     padding-right: 2%;
@@ -674,6 +670,9 @@ article ul{
 }
 article h3{
     color:black;
+}
+ul.numbers{
+    font-style: oblique;
 }
 
 
