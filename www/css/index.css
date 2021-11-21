@@ -530,6 +530,9 @@ header .logo{
 .article-wrapper button:active{
     background:url(../img/icon_heart_full.png);
 }
+.article-wrapper .on{
+    background:url(../img/icon_heart_full.png);
+}
 
 .colBody{
     color: #FF9B81;

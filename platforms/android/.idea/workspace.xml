@@ -13,9 +13,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2bdfe55-3d9a-4079-9a5f-7082237bde9f" name="Default Changelist" comment="updated header on all pages">
-      <change beforePath="$PROJECT_DIR$/../ios/www/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/www/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ios/www/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/www/img/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ios/www/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/www/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../www/articles.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../www/articles.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../www/js/quiz.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../www/js/quiz.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

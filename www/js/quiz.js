@@ -98,7 +98,7 @@ nisl sem, ultricies sollicitudin elit venenatis et.
 Read all our <a href="#"><span style="color: blue"> Terms and conditions</span></a> here
 <br><br><br>
 <input type="checkbox" id="answer" name="consent">
-<label for="consent">I have read and agree to all Terms and conditions</label>`,"terms" ));
+<label for="consent">I have read and agree to all Terms and conditions</label>`,"","terms" ));
 questions.push(new Question("Choose your journey", `We know you’re unique, and at RISE HQ we’re all about making sure what you see relates to you.
 So we’d like to take you through some choices so that what you see is what you need.`, `<div class="journeyChoice">
 <!--Containre for question element-->
