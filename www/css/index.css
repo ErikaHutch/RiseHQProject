@@ -703,11 +703,9 @@ ul.numbers{
     background-size: 13%;
     background-position: 43% 6%;*/
     text-align: center;
-    background-color: #FFBF00;
 }
 #titleSection{
-    margin: 5%;
-    padding-top: 7%;
+    padding: 2%;
 }
 #titleSection h1{
     text-align:left;
@@ -716,10 +714,10 @@ ul.numbers{
 }
 /* Search bar */
 #services-content select{
-    width:80%;
+    width:100%;
     padding:2%;
     margin-top: 5%;
-    border: 1px solid #333333;
+    border: 1px solid #FFBF00;
     color: #333333;
     background-color: #FFFFFF;
     text-transform: uppercase;
@@ -734,6 +732,7 @@ ul.numbers{
     margin:5% 10%;
     padding:3%;
     text-align: center;
+    border-bottom: solid 2px #FFBF00;
 }
 .servicesContainer img{
     width:80%;
@@ -762,10 +761,11 @@ ul.numbers{
     color: #333333;
     font-family: 'gorditamedium', Arial, sans-serif;
 }
-
 .servicesBack{
-    background-color: #FFBF00;
+    width: 80%;
+    margin:2% 10%;
 }
+
 /*#panel {
     display: none;
   }*/
