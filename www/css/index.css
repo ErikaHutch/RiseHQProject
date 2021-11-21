@@ -233,19 +233,21 @@ header .logo{
 }
 #who-we-are{
     color:white;
-    background-color: #FF3E50;
+    background-image: url(../img/back.png);
+    background-size: 100%;
+    /*background-color: #FF3E50;*/
     padding: 4%;
-    border-bottom: #FFBF00 7px solid;
+    /*border-bottom: #FFBF00 7px solid;*/
 }
 
 #who-we-are h1{
     font-weight: bold;
     text-align: left;
-    padding: 2%;
 }
 
 #w-w-a-p{
-    margin: 5%;
+    margin:5%;
+    padding: 2%;
 }
 
 #AboutImg{
@@ -257,9 +259,11 @@ header .logo{
 
 #what-we-do{
     color:white;
-    background-color: #176671;
-    padding: 15px;
-    border-bottom: #FF3E50 7px solid;
+    /*background-color: #176671;*/
+    padding: 4%;
+    /*border-bottom: #FF3E50 7px solid;*/
+    background-image: url(../img/back2.png);
+    background-size: 100%;
 }
 
 #what-we-do h1{
@@ -268,7 +272,7 @@ header .logo{
 }
 
 #w-w-d-p{
-    margin:20px;
+    margin:5%;
     padding: 2%;
 }
 
