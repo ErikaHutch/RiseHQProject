@@ -233,19 +233,21 @@ header .logo{
 }
 #who-we-are{
     color:white;
-    background-color: #FF3E50;
+    background-image: url(../img/back.png);
+    background-size: 100%;
+    /*background-color: #FF3E50;*/
     padding: 4%;
-    border-bottom: #FFBF00 7px solid;
+    /*border-bottom: #FFBF00 7px solid;*/
 }
 
 #who-we-are h1{
     font-weight: bold;
     text-align: left;
-    padding: 2%;
 }
 
 #w-w-a-p{
-    margin: 5%;
+    margin:5%;
+    padding: 2%;
 }
 
 #AboutImg{
@@ -257,9 +259,11 @@ header .logo{
 
 #what-we-do{
     color:white;
-    background-color: #176671;
-    padding: 15px;
-    border-bottom: #FF3E50 7px solid;
+    /*background-color: #176671;*/
+    padding: 4%;
+    /*border-bottom: #FF3E50 7px solid;*/
+    background-image: url(../img/back2.png);
+    background-size: 100%;
 }
 
 #what-we-do h1{
@@ -268,7 +272,7 @@ header .logo{
 }
 
 #w-w-d-p{
-    margin:20px;
+    margin:5%;
     padding: 2%;
 }
 
@@ -400,7 +404,7 @@ header .logo{
 /*--------------------------------------------------------------------------------------------------------*/
 /* QUIZ PAGES */
 
-.bar{
+.bar{margin-top:11.5%;
     display: block;
     /*width:100%;*/
     padding: 5px;
@@ -416,7 +420,7 @@ header .logo{
 
 .quiz{
     background-color: #FEFDFA;
-    background-image: url(../img/quizBg.png);
+    background-image: url(../img/quizBgR.png);
     background-size: cover;
     background-repeat: no-repeat;
     
@@ -640,13 +644,11 @@ article h2{
 
 article p{
     padding: 2% 5%;
-    font-size: smaller;
     font-family: 'gorditamedium', Arial, sans-serif;
 }
 
 article li{
     padding: 0%;
-    font-size: smaller;
     font-family: 'gorditamedium', Arial, sans-serif;
     text-transform: none;
     color: #000000;
@@ -696,6 +698,7 @@ ul.numbers{
     border-left:solid 2px #FF9B81;
 }
 
+
 /*--------------------------------------------------------------------------------------------------------*/
 /* SERVICES */
 
@@ -707,11 +710,9 @@ ul.numbers{
     background-size: 13%;
     background-position: 43% 6%;*/
     text-align: center;
-    background-color: #FFBF00;
 }
 #titleSection{
-    margin: 5%;
-    padding-top: 7%;
+    padding: 2%;
 }
 #titleSection h1{
     text-align:left;
@@ -720,10 +721,10 @@ ul.numbers{
 }
 /* Search bar */
 #services-content select{
-    width:80%;
+    width:100%;
     padding:2%;
     margin-top: 5%;
-    border: 1px solid #333333;
+    border: 1px solid #FFBF00;
     color: #333333;
     background-color: #FFFFFF;
     text-transform: uppercase;
@@ -738,6 +739,7 @@ ul.numbers{
     margin:5% 10%;
     padding:3%;
     text-align: center;
+    border-bottom: solid 2px #FFBF00;
 }
 .servicesContainer img{
     width:80%;
@@ -766,10 +768,14 @@ ul.numbers{
     color: #333333;
     font-family: 'gorditamedium', Arial, sans-serif;
 }
-
 .servicesBack{
-    background-color: #FFBF00;
+    width: 80%;
+    margin:2% 10%;
 }
+
+/*#panel {
+    display: none;
+  }*/
 
 /* Menu */
 

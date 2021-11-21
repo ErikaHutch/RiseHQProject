@@ -10,6 +10,14 @@
 
 }
 
+.logo{
+    
+    padding: 3.5%  !important;
+}
+
+p{
+    font-size: bigger;
+}
 .dots{
     margin: 0 0 5%;
     position: absolute;
@@ -46,6 +54,7 @@
     height: 20%;
     position: fixed;
     width: 100%;
+    margin-left: 8%;
 }
 
 #consent{
@@ -58,7 +67,10 @@
     text-align: center;
     max-width: 40%;
     /*display: block;*/
+    color: white;
     margin: 0 auto 10%;
+    text-transform: uppercase;
+    font-family: 'gorditablack', Arial, sans-serif
 }
 
 .journeyChoice {
@@ -70,12 +82,14 @@
     margin: 0 auto;
     text-align: center;
     display: inline-block;
+    
     width:40%;
 }
 
 #journeyChoice select{
     width:100%;
     color: #333333;
+    padding: 5px 15px;
 }
 
 .posts{
@@ -99,4 +113,5 @@
 
 .row{
     background: rgba(255, 255, 255, 0.8);
+    margin-left: 17%;
 }
