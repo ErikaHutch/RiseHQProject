@@ -438,6 +438,12 @@ header .logo{
     padding: 1%;
     display: block;
 }
+/*Needed the id changed to class*/
+.inputName{
+    margin: 25% auto;
+    padding: 1%;
+    display: block;
+}
 
 /*--------------------------------------------------------------------------------------------------------*/
 /* ARTICLES*/

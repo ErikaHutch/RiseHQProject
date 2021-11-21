@@ -18,23 +18,47 @@
  */
 * {
     -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+     /* adding custom fonts */
+    /*font-family: 'gorditaregular', Arial, sans-serif;*/
+    color:#333333;
+    font-weight: normal;
+    
+}
+
+p{ 
+    font-family: 'gorditamedium', Arial, sans-serif;
 }
 
 body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-color:#E4E4E4;
-    background-image:linear-gradient(to bottom, #A7A7A7 0%, #E4E4E4 51%);
-    font-family: system-ui, -apple-system, -apple-system-font, 'Segoe UI', 'Roboto', sans-serif;
-    font-size:12px;
-    height:100vh;
+    background-color:white;
+    /*background-image:linear-gradient(to bottom, #A7A7A7 0%, #E4E4E4 51%);*/
+    /*font-family: system-ui, -apple-system, -apple-system-font, 'Segoe UI', 'Roboto', sans-serif;
+    */font-size:12px;
+    /*height:100vh;*/
     margin:0px;
     padding:0px;
     /* Padding to avoid the "unsafe" areas behind notches in the screen */
     padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
-    text-transform:uppercase;
+    /*text-transform:uppercase;*/
     width:100%;
+}
+
+ul{
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0px;
+}
+
+h3, li {
+    color:#FFFFFF;
+    text-transform:uppercase;
+    font-family: 'gorditablack', Arial, sans-serif /*!important*/;
+    font-weight: bold /*!important*/;
+    padding: 0;
 }
 
 /* Portrait layout (default) */
@@ -68,6 +92,15 @@ h1 {
     overflow:visible;
     padding:0px;
     text-align:center;
+    text-transform:uppercase;
+    font-family: 'gorditablack', Arial, sans-serif;
+    color: #FFFFFF;
+}
+
+h2{
+    text-transform:uppercase;
+    font-family: 'gorditablack', Arial, sans-serif;
+    color: #FFFFFF;
 }
 
 .event {
@@ -105,6 +138,632 @@ h1 {
 
 @media screen and (prefers-color-scheme: dark) {
     body {
-        background-image:linear-gradient(to bottom, #585858 0%, #1B1B1B 51%);
+        /*background-image:linear-gradient(to bottom, #585858 0%, #1B1B1B 51%);*/
     }
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Nav bar */
+header a{
+    float: right;
+    margin: 3% 5%;
+    border: none;
+    height: 40px;
+}
+
+header .logo{
+    width:10%;
+    padding: 15px;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------*/
+/*HUB*/
+#HubList li{
+    list-style-type: none;
+}
+
+#HubList a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+#HubList{
+    padding: 0;
+    margin:0;
+    bottom: 0;
+}
+
+.hubHolder{
+    min-height: 100%;
+    width:100%;
+}
+
+#HubList li a:hover{
+    text-decoration: underline;
+}
+
+.Hub{
+    
+    font-weight: bold;
+    font-size: 250%;
+    max-height: 50%;
+    padding: 7%;
+}
+
+.hub1{
+    background-color: #FF9B81;
+    /*border-top: black 4px solid;*/
+}
+
+.hub2{
+    background-color: #FF3E50;
+}
+
+.hub3{
+    background-color: #FF6A46;
+}
+
+.hub4{
+    background-color: #FFBF00;
+}
+
+.hub5{
+    background-color: #3FD4C2;
+}
+
+.hub6{
+    background-color: #176671;
+}
+
+
+
+/*--------------------------------------------------------------------------------------------------------------*/
+/*ABOUT*/
+#about-content{
+    border-top: solid 4px black;
+}
+#who-we-are{
+    color:white;
+    background-color: #FF3E50;
+    padding: 4%;
+    border-bottom: #FFBF00 7px solid;
+}
+
+#who-we-are h1{
+    font-weight: bold;
+    text-align: left;
+    padding: 2%;
+}
+
+#w-w-a-p{
+    margin: 5%;
+}
+
+#AboutImg{
+    width: 400px;
+    height: 200px;
+    object-fit: contain;
+    padding: 3%;
+}
+
+#what-we-do{
+    color:white;
+    background-color: #176671;
+    padding: 15px;
+    border-bottom: #FF3E50 7px solid;
+}
+
+#what-we-do h1{
+    font-weight: bold;
+    text-align: right;
+}
+
+#w-w-d-p{
+    margin:20px;
+    padding: 2%;
+}
+
+
+
+/*------------------------------------------------------------------------------------------------------*/
+/*PROFILE*/
+#profileContainer{
+    border-top: solid 4px;
+}
+
+#profilePic{
+    border-radius: 50%;;
+    width: 40%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%;
+}
+
+.profileInfo{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+#user-name-wrapper h1{
+    color: black;
+}
+
+.p-btn-wrapper{
+    padding: 5%;
+    margin: 6%;
+    font-weight: bold;
+    font-size: 150%;
+    text-align: center;
+    font-family: 'gorditablack', Arial, sans-serif;
+}
+
+.p-btn-wrapper a{
+    text-decoration: none;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+#save-btn{
+    background-color: #FF9B81;
+}
+
+#pref-btn{
+    background-color: #FF3E50;
+}
+
+#details-btn{
+    background-color: #FFBF00;
+}
+
+#serv-btn{
+    background-color: #176671;
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*CONTACT*/
+#contact-us-header-wrapper{
+    border-top: black solid 4px;
+    color:white;
+    background-color: #3FD4C2;
+    padding: 4%;
+    text-align: center;
+}
+
+#contact-us-header-wrapper h1{
+    font-weight: bold;
+    text-align: left;
+}
+
+#contact-us-details-wrapper{
+    padding: 8%;
+    text-align: center;
+    font-size: large;
+}
+
+#contact-us-img{
+    padding: 5%;
+}
+
+/*needs to be at the bottom of the page*/
+.git-btn-wrapper{
+    padding: 4%;
+    font-weight: bold;
+    font-size: 200%;
+    text-align: center;
+}
+
+.git-btn-wrapper a{
+    text-decoration: none;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+#web-btn{
+    background-color: #FF9B81;
+}
+
+#email-btn{
+    background-color: #FF3E50;
+}
+
+#chat-btn{
+    background-color: #176671;
+}
+
+#social-media-ics-wrapper{
+    text-align: center;
+    padding: 3%;
+}
+
+#social-media-ics-wrapper img{
+        width: 15%;
+        height: 15%;
+        padding: 4%;    
+}
+
+
+
+/*--------------------------------------------------------------------------------------------------------*/
+/* QUIZ PAGES */
+
+.bar{
+    display: block;
+    width:100%;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+#questionHead{
+    color: white;
+    font-size: medium;
+}
+
+.quiz{
+    background-color: #FEFDFA;
+    background-image: url(../img/quizBg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+#x{
+    margin-top: 2%;
+    margin-right: 2%;
+    padding: 5px 10px;
+    float: right;
+}
+
+#question{
+    padding: 3% 5%;
+}
+
+#inputName{
+    margin: 25% auto;
+    padding: 1%;
+    display: block;
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+/* ARTICLES*/
+#articles-content{
+    /*background-image:url(../img/ellipse.png);
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: 2% -0.5%;*/
+    border-top: solid thick #000000;
+}
+
+/* title*/
+#feed-header-wrapper{
+    margin: 5%;
+    padding-top: 7%;
+}
+
+#feed-header-wrapper h1{
+    text-align:left;
+    color: black;
+}
+
+/* filters */
+#feed-topic-filters-wrapper {
+    width: 100%;
+    margin-left: -5%;
+}
+
+#feed-topic-filters-wrapper select{
+    width:30%;
+    float: left;
+    padding: 2%;
+    margin-right: 4%; 
+    border: 1px solid #333333;
+    color: #333333;
+    background-color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+#feed-topic-filters-wrapper select:focus {
+    outline: none;
+}
+
+#feed-topic-filters-wrapper button{
+    width:32%;
+    float: left;
+    padding: 2.25% 2%;
+    border: 1px solid #333333;
+    color: #333;
+    background-color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+#feed-topic-filters-wrapper form{
+    margin-left: 10%;
+}
+
+#empty{
+    clear: both;
+}
+
+/* articles sections */
+
+.article-wrapper{
+    clear: both;
+    padding: 5%;
+    margin: 5%;
+}
+
+.article-wrapper p{
+    font-size: small;
+}
+
+.article-wrapper button{
+    float: right;
+    padding: 2%;
+    background:url(../img/icon_heart.png);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    border: none;
+}
+
+.article-wrapper button:active{
+    background:url(../img/icon_heart_full.png);
+}
+
+.colBody{
+    color: #FF9B81;
+}
+
+.colSex{
+    color: #FF3E50;
+}
+
+.colLife{
+    color: #FF6A46;
+}
+
+.colSelf{
+    color: #FFBF00;
+}
+.colMind{
+    color: #3FD4C2;
+}
+
+.colNews{
+    color: #176671;
+}
+
+/*.oddNum {
+    margin-left: 0%;
+    margin-right: 10%;
+    border-left: none;
+}
+
+.evenNum {
+    margin-left: 10%;
+    margin-right: 0%;
+    border-right: none;
+}*/
+
+.borderBody{
+    border-top: solid #FF9B81;
+}
+
+.borderSex{
+    border-top: solid #FF3E50;
+}
+
+.borderLife{
+    border-top: solid #FF6A46;    
+}
+
+.borderSelf{
+    border-top: solid #FFBF00;
+}
+
+.borderMind{
+    border-top: solid #3FD4C2;
+}
+
+.borderNews{
+    border-top: solid #176671;
+}
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------*/
+/* AN ARTICLE*/
+
+/* Colours*/
+.backBody{
+    background-color: #FF9B81;
+}
+
+.backSex{
+    background-color: #FF3E50;
+}
+
+.backLife{
+    background-color: #FF6A46;
+}
+
+.backSelf{
+    background-color: #FFBF00;
+}
+.backMind{
+    background-color: #3FD4C2;
+}
+
+.backNews{
+    background-color: #176671;
+}
+
+/* Background */
+article{
+    border-top: solid thick #000000;
+    background-image:url(../img/ellipse.png);
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: -10% 35%;
+}
+
+/* Text */
+article h2{
+    padding: 5%;
+    margin-top: 0%;
+}
+
+article p{
+    padding: 2% 5%;
+    font-size: smaller;
+    font-family: 'gorditamedium', Arial, sans-serif;
+}
+
+article li{
+    padding: 0% 5%;
+    font-size: smaller;
+    font-family: 'gorditamedium', Arial, sans-serif;
+    text-transform: lowercase;
+    color: #000000;
+    font-weight: normal;
+    list-style-type: circle;
+}
+article ul{
+    list-style-type:circle;
+}
+
+/* Photos */
+#article_photo1{
+    float: right;
+    width: 50%;
+    padding-left: 2%;
+}
+
+#article_photo2{
+    float: left;
+    width: 50%;
+    padding-right: 2%;
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+/* SERVICES */
+
+/* Title */
+#services-content{
+    border-top: solid thick #000000;
+    /*background-image:url(../img/ellipse3.png);
+    background-repeat: no-repeat;
+    background-size: 13%;
+    background-position: 43% 6%;*/
+    text-align: center;
+    background-color: #FFBF00;
+}
+#titleSection{
+    margin: 5%;
+    padding-top: 7%;
+}
+#titleSection h1{
+    text-align:left;
+    margin: 5%;
+    color: #FEFDFA;
+}
+/* Search bar */
+#services-content select{
+    width:80%;
+    padding:2%;
+    margin-top: 5%;
+    border: 1px solid #333333;
+    color: #333333;
+    background-color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: 'gorditamedium', Arial, sans-serif;
+}
+
+#services-content select:focus {
+    outline: none;
+}
+
+.servicesContainer{
+    margin:5% 10%;
+    padding:3%;
+    text-align: center;
+}
+.servicesContainer img{
+    width:80%;
+    padding-left: 9%;
+}
+
+#servicesMap{
+    width:100%;
+    margin:5% 0%;
+}
+
+.servicesContainer button{
+    float: right;
+    padding: 2%;
+    background:url(../img/icon_heart.png);
+    width: 24px;
+    height: 24px;
+    border: none;;
+}
+
+.servicesContainer button:active{
+    background:url(../img/icon_heart_full.png);
+}
+
+.servicesContainer h3{
+    color: #333333;
+    font-family: 'gorditamedium', Arial, sans-serif;
+}
+
+.servicesBack{
+    background-color: #FFBF00;
+}
+
+/* Menu */
+
+#menuColours a{
+    text-decoration: none;
+    color: white;
+}
+
+#menuColours{
+    padding:0%;
+}
+#menuColours li{
+    padding: 5%;
+    margin: 5% 0%;
+    font-family: 'gorditablack', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 200%;
+    text-decoration: none;
+}
+#menuColour1{
+    background-color: #FF9B81;
+}
+#menuColour3{
+    background-color: #FF6A46;
+}
+#menuColour2{
+    background-color: #FF3E50
+}
+#menuColour4{
+    background-color: #FFBF00;
+}
+#menuColour5{
+    background-color: #3FD4C2;
+}
+#menuColour6{
+    background-color: #176671
 }

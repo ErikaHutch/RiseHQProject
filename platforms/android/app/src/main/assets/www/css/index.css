@@ -19,10 +19,10 @@
 * {
     -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
      /* adding custom fonts */
-     font-family: 'gorditaregular', Arial, sans-serif;
+    /*font-family: 'gorditaregular', Arial, sans-serif;*/
     color:#333333;
-    /*font-weight: normal;
-    font-style: normal;*/
+    font-weight: normal;
+    
 }
 
 p{ 
@@ -46,13 +46,26 @@ body {
     width:100%;
 }
 
-
-h3{
-    color:#FFFFFF;
-    text-transform:uppercase;
-    font-family: 'gorditablack', Arial, sans-serif;
+ul{
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0px;
 }
 
+h3, li {
+    color:#FFFFFF;
+    text-transform:uppercase;
+    font-family: 'gorditablack', Arial, sans-serif /*!important*/;
+    font-weight: bold /*!important*/;
+    padding: 0;
+}
+h4{
+    font-family: 'gorditamedium', Arial, sans-serif;
+    text-transform: uppercase;
+    padding-top: 5%;
+    padding-left: 5%;
+}
 /* Portrait layout (default) */
 .app {
     background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
@@ -86,11 +99,13 @@ h1 {
     text-align:center;
     text-transform:uppercase;
     font-family: 'gorditablack', Arial, sans-serif;
+    color: #FFFFFF;
 }
 
 h2{
     text-transform:uppercase;
     font-family: 'gorditablack', Arial, sans-serif;
+    color: #FFFFFF;
 }
 
 .event {
@@ -132,6 +147,10 @@ h2{
     }
 }
 
+a{
+    text-decoration: none;
+}
+
 /* Nav bar */
 header a{
     float: right;
@@ -147,34 +166,42 @@ header .logo{
 
 /*----------------------------------------------------------------------------------------------------------------------------*/
 /*HUB*/
-li{
+#HubList li{
     list-style-type: none;
 }
 
-a{
+#HubList a {
     text-decoration: none;
-    /*color: white;*/
+    color: white;
+    text-transform: uppercase;
 }
 
-ul{
+#HubList{
     padding: 0;
+    margin:0;
+    bottom: 0;
 }
 
-/*Only works when clicked not on hover, needs looking into*/
-a:hover{
+.hubHolder{
+    min-height: 100%;
+    width:100%;
+}
+
+#HubList li a:hover{
     text-decoration: underline;
 }
 
 .Hub{
     
-    padding: 30px;
     font-weight: bold;
-    font-size: 300%;
-    max-height: 16%;
+    font-size: 250%;
+    max-height: 50%;
+    padding: 7%;
 }
 
 .hub1{
     background-color: #FF9B81;
+    /*border-top: black 4px solid;*/
 }
 
 .hub2{
@@ -202,35 +229,37 @@ a:hover{
 /*--------------------------------------------------------------------------------------------------------------*/
 /*ABOUT*/
 #about-content{
-    border-top: solid 4px;
+    border-top: solid 4px black;
 }
 #who-we-are{
     color:white;
-    background-color: #FF9B81;
-    padding: 15px;
+    background-color: #FF3E50;
+    padding: 4%;
+    border-bottom: #FFBF00 7px solid;
 }
 
 #who-we-are h1{
     font-weight: bold;
     text-align: left;
+    padding: 2%;
 }
 
 #w-w-a-p{
-    margin:20px;
-    /*This needs not be uppercase*/
+    margin: 5%;
 }
 
 #AboutImg{
     width: 400px;
     height: 200px;
     object-fit: contain;
-    padding: 5px;
+    padding: 3%;
 }
 
 #what-we-do{
     color:white;
-    background-color: #3FD4C2;
+    background-color: #176671;
     padding: 15px;
+    border-bottom: #FF3E50 7px solid;
 }
 
 #what-we-do h1{
@@ -240,19 +269,25 @@ a:hover{
 
 #w-w-d-p{
     margin:20px;
+    padding: 2%;
 }
 
 
 
 /*------------------------------------------------------------------------------------------------------*/
 /*PROFILE*/
+#profileContainer{
+    border-top: solid 4px;
+}
+
 #profilePic{
     border-radius: 50%;;
-    width: 150px;
+    width: 40%;
     height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding: 2%;
 }
 
 .profileInfo{
@@ -262,15 +297,22 @@ a:hover{
 }
 
 #user-name-wrapper h1{
-    padding-top: 5px;
+    color: black;
 }
 
 .p-btn-wrapper{
-    padding: 25px;
-    margin: 30px;
+    padding: 5%;
+    margin: 6%;
     font-weight: bold;
     font-size: 150%;
     text-align: center;
+    font-family: 'gorditablack', Arial, sans-serif;
+}
+
+.p-btn-wrapper a{
+    text-decoration: none;
+    color: #FFFFFF;
+    text-transform: uppercase;
 }
 
 #save-btn{
@@ -297,7 +339,7 @@ a:hover{
     border-top: black solid 4px;
     color:white;
     background-color: #3FD4C2;
-    padding: 15px;
+    padding: 4%;
     text-align: center;
 }
 
@@ -307,7 +349,7 @@ a:hover{
 }
 
 #contact-us-details-wrapper{
-    padding: 25px;
+    padding: 8%;
     text-align: center;
     font-size: large;
 }
@@ -318,10 +360,16 @@ a:hover{
 
 /*needs to be at the bottom of the page*/
 .git-btn-wrapper{
-    padding: 10px;
+    padding: 4%;
     font-weight: bold;
-    font-size: 200%;
+    font-size: 150%;
     text-align: center;
+}
+
+.git-btn-wrapper a{
+    text-decoration: none;
+    color: #FFFFFF;
+    text-transform: uppercase;
 }
 
 #web-btn{
@@ -338,13 +386,13 @@ a:hover{
 
 #social-media-ics-wrapper{
     text-align: center;
-    
+    padding: 3%;
 }
 
 #social-media-ics-wrapper img{
-        width: 50px;
-        height: 50px;
-        padding: 15px;    
+        width: 15%;
+        height: 15%;
+        padding: 4%;    
 }
 
 
@@ -354,7 +402,7 @@ a:hover{
 
 .bar{
     display: block;
-    width:100%;
+    /*width:100%;*/
     padding: 5px;
     font-weight: bold;
     font-size: 20px;
@@ -363,11 +411,15 @@ a:hover{
 
 #questionHead{
     color: white;
-    font-size: small;
+    font-size: medium;
 }
 
 .quiz{
     background-color: #FEFDFA;
+    background-image: url(../img/quizBg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
 }
 
 #x{
@@ -390,10 +442,10 @@ a:hover{
 /*--------------------------------------------------------------------------------------------------------*/
 /* ARTICLES*/
 #articles-content{
-    background-image:url(../img/ellipse.png);
+    /*background-image:url(../img/ellipse.png);
     background-repeat: no-repeat;
     background-size: 20%;
-    background-position: 2% -0.5%;
+    background-position: 2% -0.5%;*/
     border-top: solid thick #000000;
 }
 
@@ -405,29 +457,38 @@ a:hover{
 
 #feed-header-wrapper h1{
     text-align:left;
+    color: black;
 }
 
 /* filters */
 #feed-topic-filters-wrapper {
     width: 100%;
+    margin-left: -5%;
 }
 
 #feed-topic-filters-wrapper select{
-    width:25%;
+    width:30%;
     float: left;
     padding: 2%;
-    margin-right: 4%;  
-    border: 1px solid #176671;
-    color: #176671;
+    margin-right: 4%; 
+    border: 1px solid #333333;
+    color: #333333;
+    background-color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+#feed-topic-filters-wrapper select:focus {
+    outline: none;
 }
 
 #feed-topic-filters-wrapper button{
-    width:25%;
+    width:32%;
     float: left;
     padding: 2.25% 2%;
-    margin-right: 4%;  
-    border: 1px solid #176671;
-    color: #176671;
+    border: 1px solid #333333;
+    color: #333;
+    background-color: #FFFFFF;
+    text-transform: uppercase;
 }
 
 #feed-topic-filters-wrapper form{
@@ -442,13 +503,11 @@ a:hover{
 
 .article-wrapper{
     clear: both;
-    border: solid medium #000000;
     padding: 5%;
-    margin-top: 5%;
+    margin: 5%;
 }
 
 .article-wrapper p{
-    text-transform:lowercase;
     font-size: small;
 }
 
@@ -456,6 +515,7 @@ a:hover{
     float: right;
     padding: 2%;
     background:url(../img/icon_heart.png);
+    background-repeat: no-repeat;
     width: 24px;
     height: 24px;
     border: none;
@@ -465,20 +525,30 @@ a:hover{
     background:url(../img/icon_heart_full.png);
 }
 
-.colGreen{
-    color: #176671;
+.colBody{
+    color: #FF9B81;
 }
-.colRed{
+
+.colSex{
     color: #FF3E50;
 }
-.colYellow{
+
+.colLife{
+    color: #FF6A46;
+}
+
+.colSelf{
     color: #FFBF00;
 }
-.colTurqu{
+.colMind{
     color: #3FD4C2;
 }
 
-.oddNum {
+.colNews{
+    color: #176671;
+}
+
+/*.oddNum {
     margin-left: 0%;
     margin-right: 10%;
     border-left: none;
@@ -488,46 +558,133 @@ a:hover{
     margin-left: 10%;
     margin-right: 0%;
     border-right: none;
+}*/
+
+.borderBody{
+    border-top: solid #FF9B81;
 }
+
+.borderSex{
+    border-top: solid #FF3E50;
+}
+
+.borderLife{
+    border-top: solid #FF6A46;    
+}
+
+.borderSelf{
+    border-top: solid #FFBF00;
+}
+
+.borderMind{
+    border-top: solid #3FD4C2;
+}
+
+.borderNews{
+    border-top: solid #176671;
+}
+
+
+
 
 /*--------------------------------------------------------------------------------------------------------*/
 /* AN ARTICLE*/
 
+/* Colours*/
+.backBody{
+    background-color: #FF9B81;
+}
+
+.backSex{
+    background-color: #FF3E50;
+}
+
+.backLife{
+    background-color: #FF6A46;
+}
+
+.backSelf{
+    background-color: #FFBF00;
+}
+.backMind{
+    background-color: #3FD4C2;
+}
+
+.backNews{
+    background-color: #176671;
+}
+
 /* Background */
 article{
     border-top: solid thick #000000;
-    background-image:url(../img/ellipse.png);
+    /*background-image:url(../img/ellipse.png);
     background-repeat: no-repeat;
     background-size: 20%;
-    background-position: -10% 35%;
+    background-position: -10% 35%;*/
 }
 
 /* Text */
 article h2{
     padding: 5%;
-    background-color: #FFBF00;
     margin-top: 0%;
 }
 
 article p{
     padding: 2% 5%;
     font-size: smaller;
-}
-article b{
-    color: #FFBF00;
+    font-family: 'gorditamedium', Arial, sans-serif;
 }
 
+article li{
+    padding: 0%;
+    font-size: smaller;
+    font-family: 'gorditamedium', Arial, sans-serif;
+    text-transform: none;
+    color: #000000;
+    font-weight: normal;
+    list-style-type:square;
+    margin: 0% 12%;
+}
 /* Photos */
-#article_photo1{
+#abuse1, #decision2, #child1{
     float: right;
-    width: 50%;
-    padding-left: 2%;
+    width: 60%;
+    padding: 2% 0% 3% 3%;
+    margin-top: 1em;
+}
+#child1{
+    width:55%;
+    margin-top: 0%;
+}
+#abuse2, #decision3, #child2{
+    width:100%;
 }
 
-#article_photo2{
+#abuse3, #decision1, #child3{
     float: left;
-    width: 50%;
-    padding-right: 2%;
+    width: 55%;
+    padding: 2% 3% 3% 0%;
+}
+.abuseHelp{
+    margin-left: 10%;
+    margin-right: 10%;
+    border-left:solid 2px #FFBF00;
+}
+article h3{
+    color:black;
+}
+ul.numbers{
+    font-style: oblique;
+}
+
+.scenario{
+    margin:5% 10%;
+    border-bottom: solid 1px #FF9B81;
+}
+.childHelp{
+    margin-left: 10%;
+    margin-right: 10%;
+    border-left:solid 2px #FF9B81;
 }
 
 /*--------------------------------------------------------------------------------------------------------*/
@@ -536,11 +693,12 @@ article b{
 /* Title */
 #services-content{
     border-top: solid thick #000000;
-    background-image:url(../img/ellipse3.png);
+    /*background-image:url(../img/ellipse3.png);
     background-repeat: no-repeat;
     background-size: 13%;
-    background-position: 43% 6%;
+    background-position: 43% 6%;*/
     text-align: center;
+    background-color: #FFBF00;
 }
 #titleSection{
     margin: 5%;
@@ -549,36 +707,37 @@ article b{
 #titleSection h1{
     text-align:left;
     margin: 5%;
+    color: #FEFDFA;
 }
 /* Search bar */
 #services-content select{
-    width:76%;
+    width:80%;
     padding:2%;
-    border: 1px solid #176671;
-    color: #176671;
+    margin-top: 5%;
+    border: 1px solid #333333;
+    color: #333333;
+    background-color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: 'gorditamedium', Arial, sans-serif;
 }
 
-#services-content input:focus {
+#services-content select:focus {
     outline: none;
 }
 
 .servicesContainer{
     margin:5% 10%;
     padding:3%;
-    border: 1px solid #176671;
     text-align: center;
 }
 .servicesContainer img{
     width:80%;
+    padding-left: 9%;
 }
 
 #servicesMap{
     width:100%;
-}
-
-#servicesContainerMap{
-    border: none;
-    padding:0px;
+    margin:5% 0%;
 }
 
 .servicesContainer button{
@@ -594,3 +753,48 @@ article b{
     background:url(../img/icon_heart_full.png);
 }
 
+.servicesContainer h3{
+    color: #333333;
+    font-family: 'gorditamedium', Arial, sans-serif;
+}
+
+.servicesBack{
+    background-color: #FFBF00;
+}
+
+/* Menu */
+
+#menuColours a{
+    text-decoration: none;
+    color: white;
+}
+
+#menuColours{
+    padding:0%;
+}
+#menuColours li{
+    padding: 5%;
+    margin: 5% 0%;
+    font-family: 'gorditablack', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 200%;
+    text-decoration: none;
+}
+#menuColour1{
+    background-color: #FF9B81;
+}
+#menuColour3{
+    background-color: #FF6A46;
+}
+#menuColour2{
+    background-color: #FF3E50
+}
+#menuColour4{
+    background-color: #FFBF00;
+}
+#menuColour5{
+    background-color: #3FD4C2;
+}
+#menuColour6{
+    background-color: #176671
+}

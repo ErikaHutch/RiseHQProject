@@ -18,9 +18,10 @@
     under the License.
 -->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <!--
+
+<head>
+    <meta charset="utf-8">
+    <!--
         Customize this policy to fit your own app's needs. For more guidance, see:
             https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
         Some notes:
@@ -29,23 +30,90 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
-        <meta name="color-scheme" content="light dark">
-        <link rel="stylesheet" href="css/index.css">
-        <title>Hello World</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/quizz.css">
+    <link rel="stylesheet" href="fontFiles/gorditaBlack/gorditaBlack.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="fontFiles/gorditaMedium/gorditaMedium.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="fontFiles/gorditaRegular/groditaRegular.css" type="text/css" charset="utf-8">
+    <title>Landing Page</title>
+
+    <style>
+        body {
+            height: 100vh;
+            width: 100%;
+            background-image: url("img/80.png");
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .landingButtons {
+            margin: 0;
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        #lanBut {
+            background-color: #FFbf00;
+            padding: 8% 12%;
+            text-align: center;
+            width: 100%;
+            font-weight: bold;
+        }
+
+        .logo {
+            display: inline-block;
+            color: white;
+            padding: 2%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="headRow">
+            <header>
+                <!--logo-->
+                <div class="logo">
+                    <h1 style="color: white;">RISE</h1>
+                    <h1 style="color: white;">HQ</h1>
+                </div>
+
+                <!--menu bar button-->
+                <!--<button><a href="menuBar.html">Button</a></button>-->
+                <p id="x"><a href="../menuBar.html">x</a></p>
+
+            </header>
         </div>
-        <script src="cordova.js"></script>
-        <script src="js/index.js"></script>
-    </body>
+
+
+        <div class="landingButtons">
+            <p id="lanBut"><a href="quiz/quizIntro.html">Start Your Journey</a></p>
+            <!--<button><a href="quiz/quizIntro.html">Sign Up</a></button>-->
+
+            <!--sign in-->
+            <p id="lanBut"><a href="hub.html">Take a peak</a></p>
+            <!--<button><a href="hub.html">Browse</a></button>-->
+            <!--browse-->
+        </div>
+
+    </div>
+
+
+</body>
+
 </html>
