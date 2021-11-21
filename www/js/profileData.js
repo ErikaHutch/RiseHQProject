@@ -3,8 +3,8 @@ username
 */
 
 function getUserName(){
-    window.localStorage.getItem("name");
+    return window.localStorage.getItem("name");
 }
 function setUserName(name){
-    window.localStorage.getItem("name",name);
+    window.localStorage.setItem("name",name);
 }
