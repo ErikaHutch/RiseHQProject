@@ -24,7 +24,19 @@
     font-weight: normal;
     
 }
+@font-face {
+    font-family: "gorditamedium";
+    src: url("../fontFiles/GorditaMedium/gordita_medium-webfont.woff"); 
+}
 
+@font-face {
+    font-family: "gorditablack";
+    src: url("../fontFiles/GorditaBlack/gordita_black-webfont.woff"); 
+}
+@font-face {
+    font-family: "gortditaregular";
+    src: url("../fontFiles/GorditaRegular/gordita_regular-webfont.woff"); 
+}
 p{ 
     font-family: 'gorditamedium', Arial, sans-serif;
 }
