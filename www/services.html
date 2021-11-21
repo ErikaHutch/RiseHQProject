@@ -26,7 +26,7 @@
                 <h1>Services</h1> 
             </div>
             <div class="servicesBack">
-            <form action="#">
+            <form action="#" onclick="myFunction()">
                 <!--<input type="text" list="date" placeholder="Find your services">
                 <datalist id="date">-->
                 <select>
@@ -71,9 +71,9 @@
                         </select>
                 </form>
                 <img src="img/map.png" id="servicesMap"><!--service image-->
-           <!--
+           
                 <div>
-                <div class="servicesContainer"> 
+                <div class="servicesContainer" id="panel"> 
                     <img src="img/services1.png">
                     <button></button> 
                     <h3>Service title</h3>
@@ -86,8 +86,13 @@
                     <p>Short service description</p>
                 </div>
             </div>
-        -->
+
         </div>
         </div>
+        <script>
+            function myFunction() {
+              document.getElementById("panel").style.display = "block";
+            }
+            </script>
     </body>
 </html>

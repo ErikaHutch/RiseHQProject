@@ -691,6 +691,7 @@ ul.numbers{
     border-left:solid 2px #FF9B81;
 }
 
+
 /*--------------------------------------------------------------------------------------------------------*/
 /* SERVICES */
 
@@ -765,6 +766,9 @@ ul.numbers{
 .servicesBack{
     background-color: #FFBF00;
 }
+/*#panel {
+    display: none;
+  }*/
 
 /* Menu */
 
