@@ -637,13 +637,11 @@ article h2{
 
 article p{
     padding: 2% 5%;
-    font-size: smaller;
     font-family: 'gorditamedium', Arial, sans-serif;
 }
 
 article li{
     padding: 0%;
-    font-size: smaller;
     font-family: 'gorditamedium', Arial, sans-serif;
     text-transform: none;
     color: #000000;
