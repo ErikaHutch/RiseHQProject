@@ -489,7 +489,7 @@ header .logo{
 }
 
 #feed-topic-filters-wrapper select{
-    width:30%;
+    width:29%;
     float: left;
     padding: 2%;
     margin-right: 4%; 
@@ -504,9 +504,9 @@ header .logo{
 }
 
 #feed-topic-filters-wrapper button{
-    width:32%;
+    width:29%;
     float: left;
-    padding: 2.25% 2%;
+    padding: 2% 0%;
     border: 1px solid #333333;
     color: #333;
     background-color: #FFFFFF;
