@@ -82,12 +82,14 @@ p{
     margin: 0 auto;
     text-align: center;
     display: inline-block;
+    
     width:40%;
 }
 
 #journeyChoice select{
     width:100%;
     color: #333333;
+    padding: 5px 15px;
 }
 
 .posts{
