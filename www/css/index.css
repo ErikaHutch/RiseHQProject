@@ -837,9 +837,10 @@ ul.numbers{
     position: relative;
 }
 .next{
-    float:right;
     font-family: 'gorditablack', Arial, sans-serif;
     padding-left: 2%;
+    width:15%;
+    margin: 0%;
 }
 
 .next a{
@@ -853,13 +854,22 @@ ul.numbers{
 }
 .prev{
     float: left;
-    padding-right: 5%;
+    padding-right: 0%;
+    width: 15%;
     font-family: 'gorditablack', Arial, sans-serif;
+    margin: 0%;
     
 }
 
 .description{
     padding: 2% 5%;
+}
+.description p{
+    float:right;
+}
+.tourText{
+    width:60%;
+    margin:5% 2%;
 }
 
 .lastText{
