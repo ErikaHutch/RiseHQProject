@@ -100,7 +100,9 @@ p{
     max-width: 40%;
     margin: 5% auto 0;
 }
-
+.selected{
+    background-color: #8E232E;
+}
 .postsDiv{
     width:100%;
     margin: 10% 0;
