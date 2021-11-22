@@ -861,3 +861,19 @@ ul.numbers{
 .description{
     padding: 2% 5%;
 }
+
+.lastText{
+    margin: 2% 5% 2% 20%;
+}
+
+#okButton{
+    background-color: #3FD4C2;
+    padding: 2% 4%;
+    text-align: center;
+    max-width: 40%;
+    /*display: block;*/
+    color: white;
+    margin: 80% auto 15%;
+    text-transform: uppercase;
+    font-family: 'gorditablack', Arial, sans-serif
+}
