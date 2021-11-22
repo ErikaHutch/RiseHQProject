@@ -152,7 +152,7 @@ to see).`, `<div class="postsDiv">
 </div>`, "girlIDK"))
 questions.push(new Question("Thanks <span id='nameHolder' style='color:white'></span>! That's you set", "We know life’s a journey and things change. If they do you can update your preferences anytime in your settings.", `<div class="links">
 <p> Get the</p>
-<p class="posts" style="background-color: #3fd4c2;"><a href="#"> Tour </a></p>
+<p class="posts" style="background-color: #3fd4c2;"><a href="../tour/tour1.html"> Tour </a></p>
 
 <p> or </p>
 
