@@ -12,11 +12,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2bdfe55-3d9a-4079-9a5f-7082237bde9f" name="Default Changelist" comment="updated header on all pages">
-      <change beforePath="$PROJECT_DIR$/../../config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../www/articles.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../www/articles.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../www/js/quiz.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../www/js/quiz.js" afterDir="false" />
-    </list>
+    <list default="true" id="f2bdfe55-3d9a-4079-9a5f-7082237bde9f" name="Default Changelist" comment="updated header on all pages" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

@@ -34,7 +34,7 @@ function nextQuestion(){
     else{
         saveAnswer1(questionIndex-1).then(function(){
             loadQuestion(questionIndex);
-
+            nameFunc();
             clickDot(questionIndex);
             hideFooter(false);
             if(questionIndex == questions.length-1){
@@ -57,6 +57,7 @@ function clickDot(index){
     questionIndex = index;
     
     loadQuestion(index);
+    nameFunc();
     if(questionIndex == questions.length-1){
         hideFooter(true);
     }
@@ -86,7 +87,7 @@ function createDots(){
 questionIndex = 0;
 questions = [];
 questions.push(new Question("Preferred Name", "First please, tell us, what is your preferred name?", " <input id='answer' class='inputName' placeholder='Your Name...'>", "name"));
-questions.push(new Question("Welcome [name] to Rise HQ","We know you’re unique, and at RISE HQ we’re all about making sure what you see relates to you.\n So we’d like to take you through some choices so that what you see is what you need.",null,null));
+questions.push(new Question("Welcome <span id='nameHolder' style='color:white'></span> to Rise HQ","We know you’re unique, and at RISE HQ we’re all about making sure what you see relates to you.\n So we’d like to take you through some choices so that what you see is what you need.",null,null));
 questions.push(new Question("Disclaimer and consent", `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel cursus ipsum, eget facilisis felis. Sed
 tincidunt quis felis imperdiet gravida. Etiam ultrices tellus leo. Suspendisse finibus aliquet aliquet.
 <br><br>
@@ -149,7 +150,7 @@ to see).`, `<div class="postsDiv">
 <p class="posts" onclick="$(this).toggleClass('selected')">Example two</p>
 <p class="posts" onclick="$(this).toggleClass('selected')">Example three</p>
 </div>`, "girlIDK"))
-questions.push(new Question("Thanks [name]! That's you set", "We know life’s a journey and things change. If they do you can update your preferences anytime in your settings.", `<div class="links">
+questions.push(new Question("Thanks <span id='nameHolder' style='color:white'></span>! That's you set", "We know life’s a journey and things change. If they do you can update your preferences anytime in your settings.", `<div class="links">
 <p> Get the</p>
 <p class="posts" style="background-color: #3fd4c2;"><a href="#"> Tour </a></p>
 
@@ -166,10 +167,11 @@ $(function() {
 });
 
 function nameFunc(){
+    var thing = $("#nameHolder");
     var name = window.localStorage.getItem("name");
-    questions.forEach(q => {
-       q.head = q.head.replace("[name]", name)
-    });
+    if(thing != undefined){
+        $(thing).text(name);
+    }
 }
 async function getAnswer(){
     var val = await document.getElementById("answer");
