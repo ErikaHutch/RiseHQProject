@@ -143,11 +143,11 @@ questions.push(new Question("Choose your journey", "Lastly What would you like t
 
 </div>`, "journey2"))
 questions.push(new Question("Last bits", `Finally, we like to send you posts which cover important information we think all RISERS might
-like to know about. Are you happy for us to do this? (you can just swipe left on any content you don’t want
+like to know about. Are you happy for us to do this? (you can just click on any content you don’t want
 to see).`, `<div class="postsDiv">
-<p class="posts"> Example one </p>
-<p class="posts">Example two</p>
-<p class="posts">Example three</p>
+<p class="posts" onclick="$(this).toggleClass('selected')"> Example one </p>
+<p class="posts" onclick="$(this).toggleClass('selected')">Example two</p>
+<p class="posts" onclick="$(this).toggleClass('selected')">Example three</p>
 </div>`, "girlIDK"))
 questions.push(new Question("Thanks [name]! That's you set", "We know life’s a journey and things change. If they do you can update your preferences anytime in your settings.", `<div class="links">
 <p> Get the</p>

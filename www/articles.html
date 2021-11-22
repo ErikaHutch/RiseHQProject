@@ -40,8 +40,7 @@
                 </select>
             </form>
 
-            <form action="#">
-                    <select>
+                    <select onchange="FilterArticles(this.value, false)">
                     <option>Topics</option>
                     <option value="Body">Body</option>
                     <option value="Sex">Sex</option>
@@ -50,7 +49,6 @@
                     <option value="Mind">Mind</option>
                     <option value="News">News</option>
                     </select>
-            </form>
 
             <a href="savedArticles.html"><button>Saved</button></a>
         </div>
