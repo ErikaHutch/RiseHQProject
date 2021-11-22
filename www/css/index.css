@@ -838,9 +838,8 @@ ul.numbers{
 }
 .next{
     float:right;
-    margin: 0;
-    padding: 0;
     font-family: 'gorditablack', Arial, sans-serif;
+    padding-left: 2%;
 }
 
 .next a{
@@ -853,10 +852,10 @@ ul.numbers{
     font-size: 400%;
 }
 .prev{
-    position: absolute;
-    margin-top: 50%;
+    float: left;
+    padding-right: 5%;
     font-family: 'gorditablack', Arial, sans-serif;
-    left:0;
+    
 }
 
 .description{
