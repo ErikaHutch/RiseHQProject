@@ -775,6 +775,9 @@ ul.numbers{
 .servicesContainer button:active{
     background:url(../img/icon_heart_full.png);
 }
+.servicesContainer .on{
+    background:url(../img/icon_heart_full.png);
+}
 
 .servicesContainer h3{
     color: #333333;

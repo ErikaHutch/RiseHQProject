@@ -13,7 +13,8 @@
         <link rel="stylesheet" href="fontFiles/gorditaBlack/gorditaBlack.css" type="text/css" charset="utf-8">
         <link rel="stylesheet" href="fontFiles/gorditaMedium/gorditaMedium.css" type="text/css" charset="utf-8">
         <link rel="stylesheet" href="fontFiles/gorditaRegular/groditaRegular.css" type="text/css" charset="utf-8">
-    
+        <script src="js/jquery.js"></script>
+        <script src="js/services.js"></script>
         <title>Services</title>
     </head>
     <body>
@@ -26,10 +27,9 @@
                 <h1>Services</h1> 
             </div>
             <div class="servicesBack">
-            <form action="#" onclick="myFunction()">
                 <!--<input type="text" list="date" placeholder="Find your services">
                 <datalist id="date">-->
-                <select>
+                <select id="serviceList" onchange="SelectServices(this.value)">
                     <option>Find your Services</option>
                     <option value="Physiotherapist">Physiotherapist</option>
                     <option value="Therapists">Therapists</option>
@@ -52,6 +52,7 @@
                     <option value="Financial Advice">Financial Advice</option>
                     <option value="Life Coach">Life Coach</option>
                     <option value="Childcare">Childcare</option>
+                    <option value="Health">Health</option>
                     <option value="Nursery">Nursery</option>
                     <option value="Legal Advice/Solicitors">Legal Advice/Solicitors</option>
                     <option value="Friend Apps">Friend Apps</option>
@@ -59,12 +60,11 @@
                     <option value="Friend Groups">Friend Groups</option>
                     <option value="Events">Events</option>
                 </select>
-                </form>
                 <!--</datalist>-->
                 <form action="#">
                     <!--<input type="text" list="date" placeholder="Find your services">
                     <datalist id="date">-->
-                    <select>
+                    <select  onchange="console.log(this.value)">
                         <option>Select your location</option>
                         <option value="Aberdeen">Aberdeen</option>
                         <option value="Edinburgh">Edinburgh</option>
@@ -74,27 +74,10 @@
                 <img src="img/map.png" id="servicesMap"><!--service image-->
            
                 <div id="servicesContainer">
-                    <div class="servicesContainer" id="panel"> 
-                        <img src="img/services1.jpg">
-                        <button></button> 
-                        <h3>Sexual Health Clinic</h3>
-                        <p>Short service description</p>
-                    </div>
-                    <div class="servicesContainer">
-                        <img src="img/services2.jpg">
-                        <button></button>
-                        <h3>Aberdeen Counselling</h3>
-                        <p>Short service description</p>
-                    </div>
                 </div>
             
 
         </div>
         </div>
-        <script>
-            function myFunction() {
-              document.getElementById("panel").style.display = "block";
-            }
-            </script>
     </body>
 </html>
