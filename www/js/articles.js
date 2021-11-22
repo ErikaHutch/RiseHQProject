@@ -82,3 +82,21 @@ function GetSavedArticles(){
     }
     return null;
 }
+
+
+function FilterArticles(type, saved){ //saved is bool
+    var articleContainer = $('#articles-area-wrapper');
+    $(articleContainer).empty();
+    for (let i = 0; i < articles.length; i++) {
+        if(saved){
+            if(savedArticles.includes(articles[i].id.toString() && articles[i].type == type)){
+                $(articleContainer).html(($(articleContainer).html()+articles[i].articlePreview()));
+            } 
+        }
+        else{
+            if(articles[i].type == type){
+                $(articleContainer).html(($(articleContainer).html()+articles[i].articlePreview()));
+            }           
+        }        
+    }
+}
